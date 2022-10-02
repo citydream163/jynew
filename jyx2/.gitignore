@@ -80,3 +80,5 @@ output
 
 #wps temp files
 ~$*
+
+*.meta
