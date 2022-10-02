@@ -1,6 +1,2 @@
-		DarkScence();
-		jyx2_MovePlayer("1","Level/Dynamic");
-        SetRoleFace(0);
-		jyx2_Wait(1);
-		LightScence();
-		do return end;
+Talk(56, "要成为一个真正的侠客，或是只想拥有高强的武功，就看你自己了。", "", 0);
+do return end;

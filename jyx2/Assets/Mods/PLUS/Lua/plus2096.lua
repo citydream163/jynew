@@ -1,6 +1,2 @@
-		DarkScence();
-		jyx2_MovePlayer("3","Level/Dynamic");
-        SetRoleFace(1);
-		jyx2_Wait(1);
-		LightScence();
-		do return end;
+Talk(56, "听了郭大侠说了这么多教，记着没有。", "", 0);
+do return end;

@@ -5,7 +5,7 @@ Talk(56, "记着郭大侠说过的话，可在此稍作休整。", "", 0);
 ::label1::
     DarkScence();
     RestFight();
-    SetRoleFace(3);
+    SetRoleFace(1);
     LightScence();
 	Talk(0, "黄女侠告辞，我要去闯荡江湖了。", "", 1);
 do return end;

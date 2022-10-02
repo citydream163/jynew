@@ -9,6 +9,7 @@ if (Caihua == nil) then Caihua = 0; end;
 if ( math.random(1, 100) + Caihua > 66 ) then
 	Talk(109,"这些够了，谢谢你。");
 	AddWuchang(0,Wonglike + math.random(1, 5));
+	Wonglike = 0;
 	ModifyEvent(-2, -2, -2, -2, -1, -1, -1, -2, -2, -2, -2, -2, -2);
 	ModifyEvent(-2, 9, -2, -2, -1, -1, 2141, -2, -2, -2, -2, -2, -2);
 	for j = 1, #arr do	

@@ -5,7 +5,7 @@ Talk(55, "保持良好的身体状态才能惩恶扬善。", "", 0);
 ::label1::
     DarkScence();
     Rest();
-    SetRoleFace(3);
+    SetRoleFace(1);
     LightScence();
 	Talk(0, "郭大侠告辞，我要去惩恶扬善了。", "", 1);
 do return end;

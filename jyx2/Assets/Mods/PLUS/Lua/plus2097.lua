@@ -1,6 +1,2 @@
-		DarkScence();
-		jyx2_MovePlayer("0","Level/Dynamic");
-        SetRoleFace(2);
-		jyx2_Wait(1);
-		LightScence();
-		do return end;
+Talk(55, "记着我的话，多行侠仗义，做一个真正的侠之大者。", "", 0);
+do return end;

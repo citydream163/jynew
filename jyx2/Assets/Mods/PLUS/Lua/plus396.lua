@@ -37,4 +37,5 @@ if UseItem(134) == true then goto label0 end;
             LightScence();
             Join(58);
             AddEthics(3);
+			OpenScene(75);
 do return end;

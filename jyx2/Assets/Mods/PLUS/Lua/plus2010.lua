@@ -26,6 +26,11 @@ do return end;
     Rest();
     SetRoleFace(3);
     LightScence();
+	if InTeam(58) == true then
+	Talk(63, "瞻彼淇奥，绿竹猗猗，有匪君子，如切如磋，如琢如磨。", "", 0);
+	DarkScence();	
+	LightScence();
+	end;
 	if InTeam(29) == false then goto label2 end;
 	AddEthics(-1);
 	Talk(29, "五行八卦，奇门遁甲。", "", 0);
