@@ -1,0 +1,8 @@
+if HaveItem(143) == true then goto label0 end;
+Talk(401, "这位小哥，风尘满面呀。", "", 0);
+Talk(0, "再来几张<color=blue>神游券</color>。", "", 1);
+Talk(401, "老规矩，看完面相才能拿到<color=blue>神游券</color>。", "", 0);
+do return end;
+::label0::
+Talk(401, "我刘半仙说的没错吧，通过一番努力，这位少侠已是武林盟主之尊了。", "", 0);
+do return end;
