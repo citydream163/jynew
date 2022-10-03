@@ -18,8 +18,10 @@ arrf[5] = 61;
 :: label4 ::
 fTaget = arrf[math.random(1,#arrf)];
 if arrf[fTaget] == GetCurrentEventID() then goto label4 end;
-jyx2_WalkFromTo(-1, fTaget);
-Talk(0,"哎呀，怎么一跑起来就停不下来了，可累死我了，不过沿途的风景还真不错。这是哪里呀，去打听一下。","", 1);
+--jyx2_WalkFromTo(-1, fTaget);--走
+jyx2_MovePlayer(""..fTaget.."","Level/NavigateObjs");--飞
+--Talk(0,"哎呀，怎么一跑起来就停不下来了，可累死我了，不过沿途的风景还真不错。这是哪里呀，去打听一下。","", 1);
+Talk(0,"哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。","", 1);
 --ModifyEvent(1, 20, -2, -2, 2089, 2088, -2, -2, -2, -2, -2, -2, -2);
 do return end;
 :: label2 ::
