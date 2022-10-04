@@ -236,7 +236,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a8a8480c5fd79b146bb7e35bf35f0787, type: 3}
+    m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a8a8480c5fd79b146bb7e35bf35f0787, type: 3}
+    m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Res:20221001
+  m_Text: Res:20221004
 --- !u!1 &4047244979164808390
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a8a8480c5fd79b146bb7e35bf35f0787, type: 3}
+    m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -807,4 +807,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3000\u3000\u58F0\u660E\uFF1A\u672C\u6E38\u620F\u4EC5\u7528\u4E8E\u672C\u4EBA\u5B66\u4E60Unity\u6E90\u7801\uFF0C\u4E30\u5BCC\u539F\u7248\u6E38\u620F\u5267\u60C5\u53CA\u73A9\u6CD5\u3002\u6E38\u620F\u4E0D\u542B\u4EFB\u4F55\u5546\u4E1A\u5316\u5143\u7D20\uFF0C\u4E5F\u7981\u6B62\u4E00\u5207\u518D\u5EA6\u5546\u7528\u3002\u82E5\u4F60\u8D2D\u4E70\u4E86\u6B64\u6E38\u620F\uFF0C\u8BF7\u8054\u7CFB\u9000\u6B3E\u3002"
+  m_Text: "\u3000\u3000\u58F0\u660E\uFF1A\u672C\u6E38\u620F\u4EC5\u7528\u4E8E\u672C\u4EBA\u5B66\u4E60Unity\u6E90\u7801\uFF0C\u4E30\u5BCC\u539F\u7248\u6E38\u620F\u5267\u60C5\u53CA\u73A9\u6CD5\u3002\u6E38\u620F\u672C\u4F53\u5DF2\u5728Steam\u5E73\u53F0\u514D\u8D39\u53D1\u5E03\uFF0C\u82E5\u4F60\u8D2D\u4E70\u4E86\u6B64\u6E38\u620F\uFF0C\u8BF7<color=red>\u8054\u7CFB\u9000\u6B3E</color>\u3002"
