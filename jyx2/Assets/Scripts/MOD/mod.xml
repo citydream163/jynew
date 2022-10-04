@@ -1,3 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ModItem ModId="jyx2" Name="金庸群侠传3D重制版"/>
+
+<ModItem ModId="plus" Name="金庸群侠传3D重制版 PLUS"/>
+
+<ModItem ModId="sample" Name="渡城残魂传"/>
