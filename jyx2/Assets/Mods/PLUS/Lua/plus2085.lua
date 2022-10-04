@@ -97,7 +97,7 @@ end;
 tTaget = ShowSelectPanel(0,"去哪里？", {"取消",""..taget[1].."", ""..taget[2].."", ""..taget[3].."",""..taget[4]..""});
 if not(tTaget == 0) then
 	AddItemWithoutHint(204, -1);
-	jyx2_WalkFromTo(-1, arrm[tTaget]);--走
-	--jyx2_MovePlayer(""..arr[tTaget].."","Level/NavigateObjs");--飞
+	--jyx2_WalkFromTo(-1, arrm[tTaget]);--走
+	jyx2_MovePlayer(""..arr[tTaget].."","Level/NavigateObjs");--飞
 end;
 do return end;
