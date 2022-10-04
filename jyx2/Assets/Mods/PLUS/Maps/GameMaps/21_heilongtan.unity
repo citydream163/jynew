@@ -60746,9 +60746,9 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  waterShallowColor: {r: 0.4339214, g: 0.36944115, b: 0.3049609, a: 0.85882354}
+  waterShallowColor: {r: 0.43391857, g: 0.36943832, b: 0.30495808, a: 0.85882354}
   depth: 15
-  waterColor: {r: 0.462264, g: 0.42950115, b: 0.41641816, a: 1}
+  waterColor: {r: 0.462264, g: 0.4294983, b: 0.41641533, a: 1}
   fresnelColor: {r: 1, g: 1, b: 1, a: 0.484}
   fresnel: 4
   rimColor: {r: 0.6320754, g: 0.5651325, b: 0.5277233, a: 0.35686275}
