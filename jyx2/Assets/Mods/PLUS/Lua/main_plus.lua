@@ -13,6 +13,12 @@ function RestFight()
 	luaBridge.RestFight();
 	Add3EventNum(70,997,0,0,1);--战休计数器
 end
+function MiniMapOn()
+	jyx2_ReplaceSceneObject("", "Canvas","1");
+end
+function MiniMapOff()
+	jyx2_ReplaceSceneObject("", "Canvas","");
+end
 RunTo = luaBridge.RunTo--跑路
 --以下为lua全局函数
 
