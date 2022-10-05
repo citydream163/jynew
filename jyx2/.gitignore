@@ -81,5 +81,5 @@ output
 #wps temp files
 ~$*
 
-*.meta
+
 AssetBundles/*
