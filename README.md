@@ -5,7 +5,7 @@
 [![button-steam-available-fixed-22](https://user-images.githubusercontent.com/7448857/192085415-7c1b8d34-d1ac-4f86-8d5e-969747c7a798.png)](https://store.steampowered.com/app/2098790/_/)
 
 [![license](https://img.shields.io/badge/license-%E9%87%91%E7%BE%A43D%E9%87%8D%E5%88%B6%E7%89%88%E7%A4%BE%E5%8C%BA%E5%8D%8F%E8%AE%AE-blue)](https://github.com/jynew/jynew/blob/main/LICENSE)
-[![release](https://img.shields.io/badge/release-v0.991%20stable-brightgreen)](https://pan.baidu.com/s/1sV6yL5z1mdcEDm3wVTKgaA?pwd=jyx2#list/path=%2Fjynew%2F3D%E9%87%8D%E5%88%B6PLUS%E7%89%88)
+[![release](https://img.shields.io/badge/release-v0.993%20stable-brightgreen)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865676700)
 [![Unity Version](https://img.shields.io/badge/unity-2020.3.32.f1c1-blue)](https://unity.cn/releases/lts/2020) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/jynew/jynew/pulls) 
 ![commit](https://img.shields.io/github/last-commit/jynew/jynew)<br>
@@ -14,7 +14,7 @@
 ![star](https://img.shields.io/github/stars/jynew/jynew?style=social)
 [![bilibili](https://img.shields.io/badge/videos-bilibili-pink)](https://space.bilibili.com/337537999) 
 
-[包体下载](https://pan.baidu.com/s/1sV6yL5z1mdcEDm3wVTKgaA?pwd=jyx2) | [B站主页](https://space.bilibili.com/337537999) | [联系我们](mailto://citydream@163.com) | [Download](https://pan.baidu.com/s/1sV6yL5z1mdcEDm3wVTKgaA?pwd=jyx2) | [Homepage](https://github.com/citydream163/jynew/tree/PLUS) | [ContactUs](mailto://citydream@163.com)
+[包体下载](https://steamcommunity.com/sharedfiles/filedetails/?id=2865676700) | [B站主页](https://space.bilibili.com/337537999) | [联系我们](mailto://citydream@163.com) | [Download](https://steamcommunity.com/sharedfiles/filedetails/?id=2865676700) | [Homepage](https://github.com/citydream163/jynew/tree/PLUS) | [ContactUs](mailto://citydream@163.com)
 
 ## 群侠传，启动！
 
@@ -34,9 +34,9 @@
 * 新增角色：算命先生、陌生人（若干）
 * 新增道具：一束花，日晷（游戏历），神游券（演示第2版），黑龙潭地图，客栈导游券
 * 新增函数：选择函数、判断指定触发器的交互事件、获取队伍等级总和、加血不提示、加内力不提示、加等级并返回实际增加的值、获取队伍最大等级、获取当前事件ID、全队恢复、获取当前地图编号、显示二选一框、显示选择框、增加经验不提示、进出黑龙潭秘笈、指定角色使用物品、指定角色卸下物品、获取队伍人数、获取指定角色等级、获取队伍生命总和、获取队伍角色ID、判断武学常识、判断医疗、判断拳掌、判断御剑、判断攻击带毒、判断奇门、判断防御、野外休息、判断资质、增加医疗、增加防御、增加拳掌、增加耍刀、增加御剑、增加暗器、增加奇门、增加武学常识、增加功夫带毒、增加经验
-* 修改地图：燕子坞，黑龙潭，桃花岛
+* 修改地图：高昌迷宫，燕子坞，黑龙潭，桃花岛
 * 剧情文本：修饰美化，新增若干细节
-* 更改设定：加强BOSS能力，敌人可以升级，走路速度加快，队伍上限为10，生命及内力上限提升到9999，等级上限为50，小于20的能力可以小幅升级
+* 更改设定：加强BOSS能力，敌人可以升级，走路速度加快，队伍上限为10，生命及内力上限提升到9999，等级上限为50
 
 ## 游戏画面截图
 
