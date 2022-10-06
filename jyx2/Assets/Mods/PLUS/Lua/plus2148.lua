@@ -1,5 +1,10 @@
 Talk(0, "哎呀不好！");
 DarkScence();
-jyx2_MovePlayer("0","Level/NavigateObjs");
+if (GetCurrentEventID() == 17) then
+	Gotarget = 1;
+else
+	Gotarget = 2;
+end;
+jyx2_MovePlayer(""..Gotarget.."","Level/NavigateObjs");
 LightScence();
 do return end;
