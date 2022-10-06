@@ -4575,6 +4575,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zawu_04
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f53d7933ae10dd1499c29e1ab22b3f53, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f53d7933ae10dd1499c29e1ab22b3f53, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f53d7933ae10dd1499c29e1ab22b3f53, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -13261,8 +13269,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328894724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 0.5, z: 18.55}
-  m_LocalScale: {x: 5, y: 1, z: 1.2}
+  m_LocalPosition: {x: -5.73, y: 0.5, z: 17.1}
+  m_LocalScale: {x: 7, y: 1, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1531856070}
   m_RootOrder: 5
