@@ -1,7 +1,8 @@
 if UseItem(174) == true then goto label0
 elseif UseItem(95) == true then goto label11
+elseif UseItem(202) == true then goto label12
 elseif UseItem(204) == true then goto label13
-elseif UseItem(202) == true then goto label12 
+elseif UseItem(182) == true then goto label14
 else
 	Talk(401, "让我再研究研究。", "", 0);
 end;
@@ -137,19 +138,16 @@ IcanFly = 1;
 Talk(0,tTalk4,"", 1);
 do return end;
 ::label11::
-Talk(401, "他强由他强，清风拂山岗；他横由他横，明月照大江。他自狠来他自恶，我自一口真气足。", "", 0);
-Talk(0,"先生真有点学问。","", 1);
+Talk(401, "他强由他强，清风拂山岗；他横由他横，明月照大江。他自狠来他自恶，我自一口真气足。");
+Talk(0,"先生真有点学问。");
 do return end;
 ::label12::
-xCountend = jyx2_CheckEventCount(70,999,2);--季计数器取值
-yCountend = jyx2_CheckEventCount(70,999,1);--月计数器取值
-zCountend = jyx2_CheckEventCount(70,999,0);--日计数器取值
-pCountend = jyx2_CheckEventCount(70,998,0);--战计数器取值
-rCountend = jyx2_CheckEventCount(70,997,0);--休计数器取值
-yend = xCountend * 90 + yCountend * 30 + zCountend + pCountend + rCountend;--合计游戏日
-Talk(401, "你在这游戏里已度过<color=red>"..yend.."</color>天，胡混了<color=yellow>"..zCountend.."</color>天，共战斗<color=blue>"..pCountend.."</color>场，休息了<color=green>"..rCountend.."</color>天。", "", 1);
-Talk(0,"是吗？你是怎么知道的？","", 1);
+Talk(401, "你在这游戏里已度过<color=red>"..Calendar(2).."</color>天，胡混了<color=yellow>"..Calendar(3).."</color>天，共战斗<color=blue>"..Calendar(4).."</color>场，休息了<color=green>"..Calendar(5).."</color>天。", "", 1);
+Talk(0,"是吗？你是怎么知道的？");
 do return end;
 ::label13::
-Talk(401, "这是客栈导游券，可在客栈外树林中使用，由你自行指定目的地。", "", 0);
+Talk(401, "这是客栈导游券，可在客栈外树林中使用，由你自行指定目的地。");
+do return end;
+::label14::
+Talk(401, "这是罗盘，可显示当前坐标和小船位置以及小地图。可以去南贤居控制小地图开关。");
 do return end;
