@@ -202,9 +202,9 @@ RectTransform:
   m_Father: {fileID: 4047244980026936081}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 144, y: 5}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 135, y: 25}
   m_SizeDelta: {x: 621.93164, y: 100.36328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8860254441602177085
@@ -237,7 +237,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
-    m_FontSize: 25
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -248,7 +248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6539\u7F16\uFF1A\u90FD\u5E02\u65AD\u60F3   Q\u7FA4\uFF1A480072818"
+  m_Text: "\u5236\u4F5C\uFF1A\u90FD\u5E02\u65AD\u60F3   Q\u7FA4\uFF1A480072818"
 --- !u!1 &3821188732006429529
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
-    m_FontSize: 25
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -761,11 +761,11 @@ RectTransform:
   m_Father: {fileID: 5437351737388637862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.8656006, y: 4.703232}
-  m_SizeDelta: {x: -29.709473, y: -19.406464}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 490, y: 15}
+  m_SizeDelta: {x: 1200, y: 50}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &5675893036187277212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -789,14 +789,14 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.95709896, b: 0, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 5, y: 5, z: 5, w: 5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c64a9e5ed779ddc41957e238aafee727, type: 3}
-    m_FontSize: 28
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -807,4 +807,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u3000\u3000\u58F0\u660E\uFF1A\u672C\u6E38\u620F\u4EC5\u7528\u4E8E\u672C\u4EBA\u5B66\u4E60Unity\u6E90\u7801\uFF0C\u4E30\u5BCC\u539F\u7248\u6E38\u620F\u5267\u60C5\u53CA\u73A9\u6CD5\u3002\u6E38\u620F\u672C\u4F53\u5DF2\u5728Steam\u5E73\u53F0\u514D\u8D39\u53D1\u5E03\uFF0C\u82E5\u4F60\u8D2D\u4E70\u4E86\u6B64\u6E38\u620F\uFF0C\u8BF7<color=red>\u8054\u7CFB\u9000\u6B3E</color>\u3002"
+  m_Text: "\u3000\u3000\u58F0\u660E\uFF1A\u672C\u6E38\u620F\u4EC5\u7528\u4E8E\u672C\u4EBA\u5B66\u4E60Unity\u6E90\u7801\uFF0C\u6E38\u620F\u672C\u4F53\u5DF2\u5728Steam\u5E73\u53F0\u514D\u8D39\u53D1\u5E03\uFF0C\u82E5\u4F60\u8D2D\u4E70\u4E86\u6B64\u6E38\u620F\uFF0C\u8BF7<color=red>\u8054\u7CFB\u9000\u6B3E</color>\u3002"
