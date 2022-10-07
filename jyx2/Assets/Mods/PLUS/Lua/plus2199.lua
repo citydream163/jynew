@@ -7,10 +7,4 @@ arr = {1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
 	end;
 	isBattle = 0;
 end;
-if jyx2_CheckBookAndRepute() == true then goto label1 end;
-    do return end;
-::label1::
-	Talk(0, "真累啊，好想大睡一觉。");
-    ModifyEvent(-2, -2, -2, -2, -1, -1, 2199, -1, -1, -1, -2, -2, -2);
-	jyx2_WalkFromTo(-1,1);
-	do return end;
+do return end;
