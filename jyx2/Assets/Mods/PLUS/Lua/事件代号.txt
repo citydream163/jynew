@@ -922,6 +922,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 1015打十大
 1016见四人
 1017游戏结束
+1018进门检测器
 2001胡斐居休息
 2002田伯光居休息
 2003燕子坞休息
@@ -1063,6 +1064,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2169福威镖局练功启动器
 2170福威镖局练功开关
 2171胡斐居练功启动器
+2199进门检测器2
 2200武道大会触发器初次
 2201武道大会触发器
 2202武道大会
