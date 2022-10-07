@@ -17,7 +17,7 @@ if ( math.random(1, 100) + Caihua > 66 ) then
 	end;
 else
 	Talk(109,"嗯，这些我都喜欢，你真有眼光，不过还不够多，你再去帮我采一些来。");
-	--Talk(0,"好的，我再去多采些来。");
+	Talk(0,"好的，我再去多采些来。");
 	Wonglike = Wonglike + 1;
 	for j = 1, #arr do	
 	ModifyEvent(-2, j+9, -2, -2, 2132, -2, -2, -2, -2, -2, -2, -2, -2);
