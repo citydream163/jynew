@@ -16,4 +16,5 @@ if TryBattle(61) == true then goto label0 end;
 	jyx2_ReplaceSceneObject("","NPC/zhizhu6","");
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.蜘蛛山洞",1);--大地图显示当前地图名
 do return end;

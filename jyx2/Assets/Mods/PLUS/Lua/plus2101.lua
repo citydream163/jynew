@@ -1,3 +1,4 @@
+SetFlag("ShowLocationName.桃花岛",1);--大地图显示当前地图名
 if InTeam(63) == true then goto label0 end;
 Talk(0, "这扇大门是关着的。", "", 1);
 do return end;

@@ -6,4 +6,5 @@ Talk(74, "<color=Yellow>南贤</color>那个老头子懂什么？他知道的不
 ModifyEvent(-2, -2, -2, -2, 827, 751, -1, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, 2, -2, -2, 828, -1, -1, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, 6, -2, -2, 2029, -1, -1, -2, -2, -2, -2, -2, -2);
+SetFlag("ShowLocationName.北丑居",1);--大地图显示当前地图名
 do return end;

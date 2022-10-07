@@ -10,4 +10,5 @@ if UseItem(193) == true then goto label0 end;
     ModifyEvent(-2, 1, -2, -2, 183, -1, -1, -2, -2, -2, -2, -2, -2);
     ModifyEvent(-2, 2, -2, -2, 183, -1, -1, -2, -2, -2, -2, -2, -2);
     LightScence();
+	SetFlag("ShowLocationName.衡山派",1);--大地图显示当前地图名
 do return end;

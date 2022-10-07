@@ -5,6 +5,7 @@ Talk(29, "床大好办事啊。", "", 0);
 Talk(0, "办事，办什么事？", "", 1);
 Talk(29, "我<color=Yellow>田伯光</color>会办什么事，当然是神仙做的事。有这么大的床，才可以同时搞五、六个妞，真爽。过些时候，我要再去抓些俏妞，到时兄弟想不想一起来爽啊？", "", 0);
 ModifyEvent(-2, -2, -2, -2, 306, -1, -1, -2, -2, -2, -2, -2, -2);
+SetFlag("ShowLocationName.田伯光居",1);--大地图显示当前地图名
 if AskJoin () == false then goto label0 end;
     Talk(0, "原来兄台有此雅好，与在下不谋而合。不妨咱俩一起结伴，在这江湖中好好的爽他一爽。", "", 1);
     if TeamIsFull() == false then goto label1 end;

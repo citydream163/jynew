@@ -22,4 +22,5 @@ if TryBattle(94) == true then goto label0 end;
     LightScence();
     Talk(0, "踏破铁鞋无觅处，得来全不费功夫。这里或许有我要找的书，进去找他们老大要。", "", 1);
     AddRepute(1);
+	SetFlag("ShowLocationName.神龙教",1);--大地图显示当前地图名
 do return end;

@@ -23,7 +23,7 @@ if InTeam(35) == false then goto label0 end;
     Talk(0,"人生数十年，但贵适意，却又何苦如此？<color=Yellow>左冷禅</color>要消灭崆峒、昆仑，吞并少林、武当，不知将杀多少人，流多少血？岳先生，我们必须阻止<color=Yellow>左冷禅</color>，不让他野心得逞，以免江湖之上，遍地血腥。", "", 1);
     Talk(19, "下月十五的嵩山大会上，岳某将尽力而为。", "", 0);
     Talk(0, "到时我一定去帮你。", "", 1);
-
+	SetFlag("ShowLocationName.华山派",1);--大地图显示当前地图名
     if InTeam(35) == false then goto label1 end;
         Talk(35, "是啊，师父，到时我们一定会去帮你。", "", 1);
         Talk(19, "只盼你能立了大功，我才有理由让你重回华山门下。", "", 0);

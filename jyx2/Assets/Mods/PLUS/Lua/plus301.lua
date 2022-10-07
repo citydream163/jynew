@@ -8,6 +8,7 @@ if InTeam(29) == false then goto label0 end;
 		jyx2_ReplaceSceneObject("", "NPC/平一指", "");
         LightScence();
         AddEthics(-5);
+		SetFlag("ShowLocationName.平一指居",1);--大地图显示当前地图名
         do return end;
 ::label0::
         Talk(0, "看先生家中摆设，似乎是位大夫。", "", 1);
@@ -16,6 +17,7 @@ if InTeam(29) == false then goto label0 end;
         Talk(28, "你是来找我求医的是吗？", "", 0);
         Talk(0, "目前小爷我身体无恙。", "", 1);
         Talk(28, "那就快滚。", "", 0);
+		SetFlag("ShowLocationName.平一指居",1);--大地图显示当前地图名
         if AskJoin () == true then goto label2 end;
             Talk(0, "滚就滚，凶什么凶，又不是死了女儿。", "", 1);
             ModifyEvent(-2, -2, -2, -2, 300, -1, -1, -2, -2, -2, -2, -2, -2);--by fanyu 启动脚本300 场景30-0

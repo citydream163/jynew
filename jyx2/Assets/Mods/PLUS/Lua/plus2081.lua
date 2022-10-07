@@ -1,4 +1,5 @@
 if HaveItem(153) == true then goto label0 end;
+SetFlag("ShowLocationName.古墓",1);--大地图显示当前地图名
     do return end;
 ::label0::	
 --古墓动态开关启动器开启

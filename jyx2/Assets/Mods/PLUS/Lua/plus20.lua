@@ -30,6 +30,7 @@ if TryBattle(1) == false then goto label0 end;
     ModifyEvent(-2, 8, -2, -2, -2, -2, -2, -1, -1, -1, -2, -2, -2);
 	jyx2_ReplaceSceneObject("","Dynamic/香炉","");
     AddRepute(1);
+	SetFlag("ShowLocationName.阎基居",1);--大地图显示当前地图名
     do return end;
 ::label0::
     Dead();

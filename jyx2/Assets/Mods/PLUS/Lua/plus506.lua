@@ -14,4 +14,5 @@ if InTeam(49) == true then goto label0 end;
     ModifyEvent(53, 4, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);--by qige2016 移除脚本，可以通过 场景53-编号4
     Leave(49);
     AddEthics(10);
+	SetFlag("ShowLocationName.少林寺",1);--大地图显示当前地图名
 do return end;

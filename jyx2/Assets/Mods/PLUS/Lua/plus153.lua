@@ -17,4 +17,5 @@ if InTeam(9) == true then goto label0 end;
     ModifyEvent(-2, 9, -2, -2, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     ModifyEvent(-2, 10, -2, -2, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     AddEthics(2);
+	SetFlag("ShowLocationName.武当派",1);--大地图显示当前地图名
 do return end;

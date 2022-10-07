@@ -1,4 +1,5 @@
 Talk(83, "见性峰乃<color=Red>恒山派</color>禁地，施主勿近。", "", 0);
+SetFlag("ShowLocationName.恒山派",1);--大地图显示当前地图名
 if AskBattle() == true then goto label0 end;
     do return end;
 ::label0::

@@ -18,4 +18,5 @@ if TryBattle(13) == true then goto label0 end;
     Talk(0, "今天真是大快人心，替武林除了一个大害。", "", 1);
     AddItem(191, 1);
     AddRepute(5);
+	SetFlag("ShowLocationName.成昆居",1);--大地图显示当前地图名
 do return end;

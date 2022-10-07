@@ -15,4 +15,5 @@ if TryBattle(49) == true then goto label0 end;
     Talk(86, "看我师父如何收拾你。", "", 0);
     AddEthics(2);
     AddRepute(1);
+	SetFlag("ShowLocationName.青城派",1);--大地图显示当前地图名
 do return end;

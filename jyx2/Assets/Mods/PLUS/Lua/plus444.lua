@@ -24,6 +24,7 @@ if TryBattle(69) == true then goto label0 end;
     ModifyEvent(-2, -2, -2, -2, 445, -1, -1, -2, -2, -2, -2, -2, -2);
     ModifyEvent(-2, 7, -2, -2, -1, -1, 473, -2, -2, -2, -2, -2, -2);
     ModifyEvent(-2, 8, -2, -2, -1, -1, 473, -2, -2, -2, -2, -2, -2);
+	SetFlag("ShowLocationName.白驼山",1);--大地图显示当前地图名
     if AskJoin () == true then goto label1 end;
         Talk(0, "不行，我还是想当个大侠，不肖与你这个人为伍。", "", 1);
         Talk(61, "真是可惜，本来还想跟你研究研究“床上功夫”呢。", "", 0);

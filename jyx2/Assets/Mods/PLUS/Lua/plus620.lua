@@ -25,4 +25,5 @@ ModifyEvent(16, 13, 1, 1, 633, -1, -1, 6758, 6758, 6758, -2, -2, -2);--by fanyu|
 jyx2_ReplaceSceneObject("16", "NPC/NPC12", "1");--金轮法王小弟换位置
 jyx2_ReplaceSceneObject("16", "NPC/NPC13", "1");--金轮法王小弟换位置
 ChangeMMapMusic(3);
+SetFlag("ShowLocationName.回族部落",1);--大地图显示当前地图名
 do return end;

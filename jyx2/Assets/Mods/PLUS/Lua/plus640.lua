@@ -1,3 +1,4 @@
+SetFlag("ShowLocationName.金蛇山洞",1);--大地图显示当前地图名
 if JudgeAttack(0, 75, 1000) == true then goto label0 end;
     PlayAnimation(-1, 7864, 7912);
     jyx2_PlayTimeline("[Timeline]ka460_金蛇山洞_拔金蛇剑_失败", 1, true);
@@ -12,5 +13,5 @@ if JudgeAttack(0, 75, 1000) == true then goto label0 end;
     Talk(0, "终于让我给拔出来了！", "", 1);
     jyx2_ReplaceSceneObject("", "Bake/Static/jinshejian", ""); 
     jyx2_StopTimeline("[Timeline]ka460_金蛇山洞_拔金蛇剑");
-    AddItem(110, 1);
+    AddItem(110, 1);	
 do return end;

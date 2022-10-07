@@ -27,4 +27,5 @@ if UseItem(132) == true then goto label0 end;
 	m = 11 - yCountxk % 12;
 	end;
 	Add3EventNum(70,999,0,m,0);
+	SetFlag("ShowLocationName.侠客岛",1);--大地图显示当前地图名
 do return end;

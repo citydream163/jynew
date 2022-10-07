@@ -1,3 +1,4 @@
+SetFlag("ShowLocationName.黑龙潭",1);--大地图显示当前地图名
 if InTeam(63) == true then goto label0 end;
 ModifyEvent(-2, 3, 0, 0, -1, -1, 2069, -1, -1, -1, -2, -2, -2);
     do return end;

@@ -1,4 +1,5 @@
 Talk(95, "很抱歉，敝教丘掌门现正闭关中，<color=Red>重阳宫</color>恕不接客。", "", 0);
+SetFlag("ShowLocationName.重阳宫",1);--大地图显示当前地图名
 if AskBattle() == true then goto label0 end;
     Talk(0, "真是不巧，那只好改天再登门拜访了。", "", 1);
     do return end;

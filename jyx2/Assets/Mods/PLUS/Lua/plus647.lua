@@ -5,4 +5,5 @@ if UseItem(187) == true then goto label0 end;
     Add3EventNum(-2, 1, 0, 1, 0);
     ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
     Talk(0, "哈！这刀孔大小正适合放这把鸳刀。", "", 1);
+	SetFlag("ShowLocationName.鸳鸯山洞",1);--大地图显示当前地图名
 do return end;

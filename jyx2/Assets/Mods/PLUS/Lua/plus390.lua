@@ -18,4 +18,5 @@ if TryBattle(66) == true then goto label0 end;
     Talk(0, "这头雕看起来颇通灵性，像是被饲养过的，莫非洞中住有什么高人？", "", 1);
     AddEthics(2);
     AddRepute(4);
+	SetFlag("ShowLocationName.神雕山洞",1);--大地图显示当前地图名
 do return end;

@@ -30,5 +30,6 @@ if TryBattle(11) == true then goto label0 end;
     ScenceFromTo(29, 35, 29, 48);
 	jyx2_CameraFollowPlayer();
 	jyx2_ReplaceSceneObject("", "Triggers/Leave", "1");--by citydream 显示出口可以离开
+	SetFlag("ShowLocationName.光明顶",1);--大地图显示当前地图名
     AddRepute(4);
 do return end;

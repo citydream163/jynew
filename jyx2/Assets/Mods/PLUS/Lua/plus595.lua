@@ -10,4 +10,5 @@ if TryBattle(91) == true then goto label0 end;
     jyx2_ReplaceSceneObject("","NPC/LaMa (1)","");
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.大轮寺",1);--大地图显示当前地图名
 do return end;

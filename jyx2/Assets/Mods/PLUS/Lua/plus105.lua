@@ -25,4 +25,5 @@ LightScence();
 ChangeMMapMusic(3);
 ModifyEvent(-2, 4, -2, -2, 2025, -1, -1, -2, -2, -2, -2, -2, -2);--by citydream启动脚本-2025改变对话。本场景12-4
 ModifyEvent(-2, 5, -2, -2, 2025, -1, -1, -2, -2, -2, -2, -2, -2);--by citydream启动脚本-2025改变对话。本场景12-5
+SetFlag("ShowLocationName.灵蛇岛",1);--大地图显示当前地图名
 do return end;

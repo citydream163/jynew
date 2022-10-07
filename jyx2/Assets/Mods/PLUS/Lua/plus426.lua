@@ -13,6 +13,7 @@ if UseItem(184) == true then goto label0 end;
     Talk(65, "正是。多年来，她一直想为她的孩子报仇。唉！她何必找人来杀我呢，其实我罪孽深重，我天天等她来将匕首刺入我的心中，了结这场罪恶。", "", 0);
     ModifyEvent(21, 1, -2, -2, 419, -1, -1, -2, -2, -2, -2, -2, -2);--by fanyu|启动419脚本。场景21-编号01
     ModifyEvent(-2, -2, -2, -2, 427, -1, -1, -2, -2, -2, -2, -2, -2);--by fanyu|启动427脚本。场景47-编号00
+	SetFlag("ShowLocationName.一灯居",1);--大地图显示当前地图名
     if AskBattle() == true then goto label1 end;
         Talk(0, "想不到这中间的恩怨是如此复杂。唉！又是“情”字。", "", 1);
         do return end;

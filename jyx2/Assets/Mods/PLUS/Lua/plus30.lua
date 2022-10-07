@@ -48,4 +48,5 @@ if TryBattle(3) == true then goto label0 end;
         AddEthics(2);
         AddRepute(1);
         ChangeMMapMusic(3);
+		SetFlag("ShowLocationName.苗人凤居",1);--大地图显示当前地图名
 do return end;

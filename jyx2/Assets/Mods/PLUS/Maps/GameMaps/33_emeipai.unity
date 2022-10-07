@@ -14618,7 +14618,7 @@ MonoBehaviour:
   m_EventTargets: []
   m_InteractiveEventId: -1
   m_UseItemEventId: -1
-  m_EnterEventId: -1
+  m_EnterEventId: 2151
 --- !u!65 &466365454
 BoxCollider:
   m_ObjectHideFlags: 0

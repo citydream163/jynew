@@ -16,4 +16,5 @@ if TryBattle(99) == true then goto label0 end;
     ModifyEvent(-2, 22, -2, -2, -1, -1, 629, -2, -2, -2, -2, -2, -2);--by fanyu|启动629脚本。场景16-编号22
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.金轮寺",1);--大地图显示当前地图名
 do return end;

@@ -18,4 +18,5 @@ if TryBattle(96) == true then goto label0 end;
     ModifyEvent(-2, 4, -2, -2, 615, -1, -1, -2, -2, -2, -2, -2, -2);
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.五毒教",1);--大地图显示当前地图名
 do return end;

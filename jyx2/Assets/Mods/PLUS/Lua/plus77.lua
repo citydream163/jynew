@@ -11,6 +11,7 @@ if TryBattle(8) == false then goto label0 end;
     jyx2_ReplaceSceneObject("", "NPC/NPC4", "");--喽喽死掉
     LightScence();
     AddRepute(2);
+	SetFlag("ShowLocationName.明教分舵",1);--大地图显示当前地图名
     do return end;
 ::label0::
     Dead();

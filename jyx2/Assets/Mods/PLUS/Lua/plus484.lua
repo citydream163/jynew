@@ -61,4 +61,5 @@ if InTeam(53) == true then goto label0 end;
 	ModifyEvent(52, 7, -2, -2, -1, -1, -1, -2, -2, -2, -2, -2, -2);--初识王语嫣失效
 	jyx2_ReplaceSceneObject("52", "NPC/王语嫣", "1");--显示王语嫣
     PlayWave(21);
+	SetFlag("ShowLocationName.无量山洞",1);--大地图显示当前地图名
 do return end;

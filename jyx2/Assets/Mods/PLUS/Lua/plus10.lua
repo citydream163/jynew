@@ -11,6 +11,7 @@ if UseItem(133) == true then goto label0 end;
     Talk(0, "找到了你<color=orange>胡家刀法</color>的缺页，我却还没找到《<color=#A564DB>雪山飞狐</color>》一书，唉！", "", 1);
     Talk(1, "我<color=Yellow>胡斐</color>虽不知该书的下落，但我曾经想过，为什么我的名字与这本书名这么相似？莫非家父当初跟此书有什么关联？这样吧！若你有需要的话，尽管讲一声，我就陪你找上一找。我正好也想到江湖上去历练一下，找害死我父亲的<color=Yellow>苗人凤</color>报仇。", "", 0);
 	Talk(1, "当然，还得先找那偷我<color=orange>胡家刀法</color>的<color=Yellow>阎基</color>报仇，害我一直无法练功。走，找他去。而我屋内的东西，你若有需要，也可自行拿取。", "", 0);
+	SetFlag("ShowLocationName.胡斐居",1);--大地图显示当前地图名
     if JudgeEventNum(2, -1) == true then goto label1 end;
         ModifyEvent(-2, 2, -2, -2, 833, -1, -1, -2, -2, -2, -2, -2, -2);
 ::label1::

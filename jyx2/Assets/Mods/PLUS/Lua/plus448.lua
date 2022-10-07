@@ -18,4 +18,5 @@ if TryBattle(70) == true then goto label0 end;
     ModifyEvent(-2, 11, -2, -2, 449, -1, -1, -2, -2, -2, -2, -2, -2);
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.铁掌山",1);--大地图显示当前地图名
 do return end;

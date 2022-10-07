@@ -66,4 +66,5 @@ if TryBattle(87) == true then goto label0 end;
         ModifyEvent(-2, 2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
         AddEthics(2);
         AddRepute(2);
+		SetFlag("ShowLocationName.破庙",1);--大地图显示当前地图名
 do return end;

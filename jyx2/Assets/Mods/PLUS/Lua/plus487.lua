@@ -33,6 +33,7 @@ Talk(0, "这位姑娘，有如天仙，不知芳名……", "", 1);
 Talk(51, "这是我表妹<color=Yellow>王语嫣</color>。她熟读各派武功精华，虽本身不会任何武功，但武学见识广。", "", 0);
 Talk(0, "王姑娘，你好……", "", 1);
 ModifyEvent(-2, 2, -2, -2, -2, -2, -2, 6298, -2, -2, -2, -2, -2); --记录改变贴图，Ka941 JudgeScenePic
+SetFlag("ShowLocationName.燕子坞",1);--大地图显示当前地图名
 if InTeam(53) == true then goto label0 end;
     Talk(51, "记得，你若想知道《<color=#A564DB>天龙八部</color>》的下落，就快去找大燕国的传国玉玺。", "", 0);
     ModifyEvent(-2, -2, -2, -2, 489, 493, -1, -2, -2, -2, -2, -2, -2);

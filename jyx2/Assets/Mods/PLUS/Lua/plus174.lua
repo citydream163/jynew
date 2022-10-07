@@ -16,4 +16,5 @@ if TryBattle(25) == true then goto label0 end;
     ModifyEvent(-2, 6, -2, -2, 175, -1, -1, -2, -2, -2, -2, -2, -2);--by fanyu 启动175脚本 场景29-6
     LightScence();
     AddRepute(1);
+	SetFlag("ShowLocationName.泰山派",1);--大地图显示当前地图名
 do return end;

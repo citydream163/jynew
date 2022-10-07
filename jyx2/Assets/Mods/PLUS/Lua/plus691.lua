@@ -57,6 +57,8 @@ jyx2_StopTimeline("[Timeline]ka691_小虾米居_软体娃娃跳起");
 jyx2_StopTimeline("[Timeline]ka691_小虾米居_软体娃娃打招呼");
 jyx2_SetTimelineSpeed(1); --播放速度还原
 SetRoleFace(0); --修正朝向角度
+SetFlag("BanLocationName.All",1);--关闭大地图地名显示
+SetFlag("ShowLocationName.小虾米居",1);--大地图显示当前地图名
 LightScence(); --增加过场
 ModifyEvent(-2, 0, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
 ModifyEvent(-2, 1, -2, -2, 692, -1, -1, -2, -2, -2, -2, -2, -2);

@@ -1,5 +1,6 @@
 Talk(0, "请问这里是华山吗？“华山论剑”是在这里吗？", "", 1);
 Talk(81, "不错，承蒙江湖同道看得起我<color=Red>华山派</color>，四年举办一次的“华山论剑”正是由我<color=Red>华山派</color>主办，只不过不是在这，而是在另一座山头。这里是我<color=Red>华山派</color>练功修行的地方。", "", 0);
+SetFlag("ShowLocationName.华山派",1);--大地图显示当前地图名
 if InTeam(35) == false then goto label0 end;
     Talk(35, "各位近来好吧？", "", 1);
     Talk(81, "大师哥。", "", 0);

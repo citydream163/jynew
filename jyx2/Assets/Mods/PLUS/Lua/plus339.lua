@@ -3,6 +3,7 @@ Talk(0, "小弟有事想求见贵派掌门。", "", 1);
 Talk(90, "掌门师叔现下不见客。", "", 0);
 Talk(0, "在下并无恶意，烦请这位大哥通报一声。", "", 1);
 Talk(90, "本派今有大事要办，快快离去，别在这啰嗦。", "", 0);
+SetFlag("ShowLocationName.凌霄城",1);--大地图显示当前地图名
 if AskBattle() == true then goto label0 end;
     do return end;
 ::label0::
