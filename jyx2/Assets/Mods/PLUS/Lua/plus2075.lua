@@ -10,7 +10,7 @@ do return end;
 ::label0::
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));
 if HaveItem(143) == true then goto label2 end;
-if jyx2_CheckEventCount(1,999,0) > 2 then goto label15 end;
+if jyx2_CheckEventCount(1,999,0) > 3 then goto label15 end;
     if JudgeMoney(5) == true then goto label1 end;
         Talk(401, "小哥你这么点钱，就想打发我半仙啊。");
         do return end;
@@ -153,7 +153,7 @@ do return end;
 Talk(401, "这是罗盘，可显示当前坐标和小船位置以及小地图。可以去南贤居控制小地图开关。");
 do return end;
 ::label15::
-sTaget = ShowSelectPanel(401,"命中早已注定，多算无益，小哥要再来些<color=blue>神游券</color>吗？", {"是(Y)","否(N)"});
+sTaget = ShowSelectPanel(401,"命数早已注定，多算无益，小哥要再来些<color=blue>神游券</color>吗？", {"是(Y)","否(N)"});
 if (sTaget == 0) then goto label16 end;
 do return end;
 ::label16::

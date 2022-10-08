@@ -12,6 +12,7 @@ oTalk0 = "哈哈哈哈，遨游寰宇，神游天下，爽啊。还得找那半�
 elseif jyx2_CheckEventCount(1,999,0) == 3 then
 tTalk0 = "跑的有点慢啊，飞起来。";
 oTalk0 = "风在脑后，鸟在身旁。让我飞起来吧。";
+Add3EventNum(1,999,1,0,0);--次数计数器加1
 else
 tTalk0 = "我飞……";
 oTalk0 = "";
@@ -93,13 +94,14 @@ Talk(0,oTalk0);
 do return end;
 :: label1 ::
 local arrt = {};
-arrt[1] = {1, "河洛客栈"};
-arrt[2] = {3, "有间客栈"};
-arrt[3] = {40, "悦来客栈"};
-arrt[4] = {60, "龙门客栈"};
-arrt[5] = {61, "高升客栈"};
+arrt[1] = {1, "河洛客栈",{8,7,5,4}};
+arrt[2] = {3, "有间客栈",{8,5,3,4}};
+arrt[3] = {40, "悦来客栈",{7,5,2,3}};
+arrt[4] = {60, "龙门客栈",{5,3,2,1}};
+arrt[5] = {61, "高升客栈",{4,4,3,1}};
 local arrm = {};
 local taget = {};
+local months = arrt[GetCurrentEventID()][3];
 j = 1;
 for i = 1, #arrt do
 	if not(arrt[i][1] == GetCurrentEventID()) then
@@ -113,5 +115,6 @@ if not(tTaget == 0) then
 	AddItemWithoutHint(204, -1);
 	--jyx2_WalkFromTo(-1, arrm[tTaget]);--走
 	jyx2_MovePlayer(""..arrm[tTaget].."","Level/NavigateObjs");--飞
+	Add3EventNum(70,999,0,months[tTaget],0);--旅行日程计数器
 end;
 do return end;

@@ -1008,7 +1008,8 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2083杨过入队（捉迷藏）
 2084空石棺
 2085使用神游券
-2086游戏年历一
+2086游戏简历
+
 2095郭靖
 2096黄蓉
 2097郭靖
@@ -1057,6 +1058,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2152初入悦来客栈（地图开关）
 2153初入龙门客栈（地图开关）
 2154初入高升客栈（地图开关）
+
 2165日晷
 2166胡斐居练功
 2167胡斐居练功开关 
@@ -1064,6 +1066,8 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2169福威镖局练功启动器
 2170福威镖局练功开关
 2171胡斐居练功启动器
+
+2198刷请帖
 2199进门检测器2
 2200武道大会触发器初次
 2201武道大会触发器
