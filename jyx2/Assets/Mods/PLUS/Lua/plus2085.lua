@@ -3,10 +3,23 @@ elseif UseItem(204) == true then goto label1
 end;
 do return end;
 :: label0 ::
+if jyx2_CheckEventCount(1,999,0) == 1 then
+tTalk0 = "真有半仙说的那么玄吗？快试试看。";
+oTalk0 = "哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。";
+elseif jyx2_CheckEventCount(1,999,0) == 2 then
+tTalk0 = "<color=blue>神游券</color>真神奇，快点继续跑啊。";
+oTalk0 = "哈哈哈哈，遨游寰宇，神游天下，爽啊。还得找那半仙多拿几张<color=blue>神游券</color>去。";
+elseif jyx2_CheckEventCount(1,999,0) == 3 then
+tTalk0 = "跑的有点慢啊，飞起来。";
+oTalk0 = "风在脑后，鸟在身旁。让我飞起来吧。";
+else
+tTalk0 = "我飞……";
+oTalk0 = "";
+end;
 AddItemWithoutHint(202, -1);
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));
 if (IcanFly == 1) then goto label2 end;--跳转到瞬移
-Talk(0,"真有半仙说的那么玄吗？快试试看。","", 1);
+Talk(0,tTalk0);
 PlayWave(102);
 --构造数组
 arrf = {}
@@ -22,11 +35,11 @@ if fTaget == GetCurrentEventID() then goto label4 end;
 jyx2_MovePlayer(""..fTaget.."","Level/NavigateObjs");--飞
 jyx2_Wait(1);
 --Talk(0,"哎呀，怎么一跑起来就停不下来了，可累死我了，不过沿途的风景还真不错。这是哪里呀，去打听一下。","", 1);
-Talk(0,"哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。","", 1);
+Talk(0,oTalk0);
 --ModifyEvent(1, 20, -2, -2, 2089, 2088, -2, -2, -2, -2, -2, -2, -2);
 do return end;
 :: label2 ::
-Talk(0,"真有半仙说的那么玄吗？快试试看。","", 1);
+Talk(0,tTalk0);
 --构造数组
 arr = {};
 arr[1] = {1,3,0};--第1次,有间客栈附近,胡斐居
@@ -75,7 +88,7 @@ target = "".. arr[tarr][3] .. "";
 jyx2_MovePlayer(""..target.."","Level/NavigateObjs");
 jyx2_Wait(1);
 --LightScence();
-Talk(0,"哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。","", 1);
+Talk(0,oTalk0);
 --ModifyEvent(1, 20, -2, -2, 2089, 2088, -2, -2, -2, -2, -2, -2, -2);
 do return end;
 :: label1 ::
