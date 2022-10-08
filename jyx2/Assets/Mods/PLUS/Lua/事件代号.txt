@@ -1067,7 +1067,6 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2170福威镖局练功开关
 2171胡斐居练功启动器
 
-2198刷请帖
 2199进门检测器2
 2200武道大会触发器初次
 2201武道大会触发器
