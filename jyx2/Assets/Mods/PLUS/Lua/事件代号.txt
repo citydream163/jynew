@@ -923,6 +923,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 1016见四人
 1017游戏结束
 1018进门检测器
+
 2001胡斐居休息
 2002田伯光居休息
 2003燕子坞休息
@@ -1009,6 +1010,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2084空石棺
 2085使用神游券
 2086游戏简历
+2087大地图光柱开关
 
 2095郭靖
 2096黄蓉
