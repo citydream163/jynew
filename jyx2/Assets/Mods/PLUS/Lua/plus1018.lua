@@ -12,5 +12,6 @@ if jyx2_CheckBookAndRepute() == true then goto label1 end;
 ::label1::
 	Talk(0, "真累啊，好想大睡一觉。");
     ModifyEvent(-2, -2, -2, -2, -1, -1, 2199, -1, -1, -1, -2, -2, -2);
+	ModifyEvent(-2, 10, 0, 0, -1,-1,2198, -1, -1, -1, -2, -2, -2);--刷请帖
 	jyx2_WalkFromTo(-1,1);
 	do return end;

@@ -406,12 +406,8 @@ jyx2_Wait(1.8);
 LightScence();
 if GetTeamMembersCount() > 1 then goto  label2 end;
 	Talk(0, "这一觉睡的好香，不知道江湖上发生了什么事情，去看看。", "", 1);
-	jyx2_ReplaceSceneObject("","Dynamic/请帖","1");
-    ModifyEvent(-2, 11, 0, 0, 932, -1, -1, 7968, -1, -1, -1, -1, -1);
 do return end;
 ::label2::
 	AllLeave();
 	Talk(0, "这一觉睡的好香，兄弟们都去哪里了？不知道江湖上发生了什么事情，去看看。", "", 1);
-	jyx2_ReplaceSceneObject("","Dynamic/请帖","1");
-    ModifyEvent(-2, 11, 0, 0, 932, -1, -1, 7968, -1, -1, -1, -1, -1);
 do return end;
