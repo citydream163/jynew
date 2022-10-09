@@ -641,7 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 1864858988}
-  m_InteractiveEventId: 2120
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &96899143
@@ -7948,9 +7948,9 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  waterShallowColor: {r: 0.3969795, g: 0.7173754, b: 0.8679245, a: 0}
+  waterShallowColor: {r: 0.3969479, g: 0.7173754, b: 0.8679245, a: 0}
   depth: 15
-  waterColor: {r: 0.41148496, g: 0.6739922, b: 0.6981132, a: 0}
+  waterColor: {r: 0.4114533, g: 0.6739922, b: 0.6981132, a: 0}
   fresnelColor: {r: 1, g: 1, b: 1, a: 0.484}
   fresnel: 4
   rimColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0.35686275}
@@ -8818,7 +8818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 1642555509}
-  m_InteractiveEventId: 2117
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &969949788
@@ -9235,7 +9235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 1490475339}
-  m_InteractiveEventId: 2121
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &1014242737
@@ -14007,7 +14007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 1922910878}
-  m_InteractiveEventId: 2118
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &1542582188
@@ -16526,7 +16526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 1918835778}
-  m_InteractiveEventId: 2116
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &1854791204
@@ -17445,7 +17445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventTargets:
   - {fileID: 2088466971}
-  m_InteractiveEventId: 2119
+  m_InteractiveEventId: 2115
   m_UseItemEventId: -1
   m_EnterEventId: -1
 --- !u!65 &1954887657
