@@ -7,6 +7,11 @@ arr = {1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
 	end;
 	isBattle = 0;
 end;
+if GetTeamMembersCount() < 2 and jyx2_CheckEventCount(70,333,0) == 0 and jyx2_CheckEventCount(38,333,0) == 1 then
+	ModifyEvent(-2, 10, 0, 0, -1, -1, 2088, -1, -1, -1, -2, -2, -2);
+	Talk(0, "又回家了，去睡一觉。");
+	jyx2_WalkFromTo(-1,1);
+end;
 if jyx2_CheckBookAndRepute() == true then goto label1 end;
     do return end;
 ::label1::
