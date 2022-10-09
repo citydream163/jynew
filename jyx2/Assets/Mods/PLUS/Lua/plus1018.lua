@@ -27,4 +27,10 @@ if jyx2_CheckBookAndRepute() == true then goto label1 end;
     LightScence();
     Talk(0, "哎呀，好睡好睡！");
 	ModifyEvent(-2, -2, 0, 0, 931, -1, -1, -1, -1, -1, -2, -2, -2);--刷新床为正常睡觉
+	jyx2_WalkFromTo(-1,2);
+	Talk(0, "咦！桌上好像有封请帖…………是今年华山论剑的邀请帖！经过这么久的努力，我终于得到认可，受邀参加今年在华山举行的武林大会。似乎已到了游戏的尽头了，只要我在武林大会中打败群雄，夺得武林盟主之位，那么我就可以得知如何离开这里的秘密。感谢各位朋友的帮忙，让我能顺利走到现在，接下来就得看我自己了。", "", 1);
+	jyx2_ReplaceSceneObject("","Dynamic/请帖","");
+	AddItem(189, 1);
+	ModifyEvent(25, 24, -2, -2, 934, 935, -1, -2, -2, -2, -2, -2, -2);
+	AllLeave();
 	do return end;
