@@ -6,4 +6,5 @@ if UseItem(128) == true then goto label0 end;
     Talk(45, "是，少侠有什么需要，弟子将全力配合。", "", 0);
     ModifyEvent(-2, -2, -2, -2, 556, -1, -1, -2, -2, -2, -2, -2, -2);
 	SetFlag("ShowLocationName.薛慕华居",1);--大地图显示当前地图名
+	if jyx2_CheckEventCount(45,333,0) == 0 then Add3EventNum(45,333,1,0,0) end;--初识薛慕华计数器
 do return end;

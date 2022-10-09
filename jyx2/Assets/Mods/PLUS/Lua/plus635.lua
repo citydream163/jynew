@@ -22,4 +22,5 @@ Talk(54, "是的。第一道是“智”的考验。在华山附近有个非常�
 ModifyEvent(-2, -2, -2, -2, 636, -1, -1, -2, -2, -2, -2, -2, -2);
 ChangeMMapMusic(3);
 SetFlag("ShowLocationName.渤泥岛",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(54,333,0) == 0 then Add3EventNum(54,333,1,0,0) end;--初识袁承志计数器
 do return end;

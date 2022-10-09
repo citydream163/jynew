@@ -1,5 +1,7 @@
 Talk(0, "<color=Yellow>田伯光</color>，<color=Yellow>平一指</color>叫我来杀你。", "", 1);
 Talk(29, "这老小子，还想不通，他女儿被我玩玩应该高兴才对呀。怎么，你想杀我吗？还是要跟我一起玩女人，我教你几招高招，包你整得女人死去活来。", "", 0);
+SetFlag("ShowLocationName.田伯光居",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(29,333,0) == 0 then Add3EventNum(29,333,1,0,0) end;--初识田伯光计数器
 if AskBattle() == false then goto label0 end;
     Talk(0, "你这采花淫贼，死到临头还不觉悟。你受死吧！", "", 1);
     if TryBattle(53) == true then goto label1 end;

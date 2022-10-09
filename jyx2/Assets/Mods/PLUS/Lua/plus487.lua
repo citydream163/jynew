@@ -34,6 +34,8 @@ Talk(51, "这是我表妹<color=Yellow>王语嫣</color>。她熟读各派武功
 Talk(0, "王姑娘，你好……", "", 1);
 ModifyEvent(-2, 2, -2, -2, -2, -2, -2, 6298, -2, -2, -2, -2, -2); --记录改变贴图，Ka941 JudgeScenePic
 SetFlag("ShowLocationName.燕子坞",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(51,333,0) == 0 then Add3EventNum(51,333,1,0,0) end;--初识慕容复计数器
+if jyx2_CheckEventCount(76,333,0) == 0 then Add3EventNum(76,333,1,0,0) end;--初识王语嫣计数器
 if InTeam(53) == true then goto label0 end;
     Talk(51, "记得，你若想知道《<color=#A564DB>天龙八部</color>》的下落，就快去找大燕国的传国玉玺。", "", 0);
     ModifyEvent(-2, -2, -2, -2, 489, 493, -1, -2, -2, -2, -2, -2, -2);

@@ -7,4 +7,5 @@ for j = 1, #arr do
 ModifyEvent(-2, j+9, -2, -2, 2132, -2, -2, -2, -2, -2, -2, -2, -2);
 end;
 ModifyEvent(-2, -2, -2, -2, 2134, 2133, -1, -2, -2, -2, -2, -2, -2);
+if jyx2_CheckEventCount(76,333,0) == 0 then Add3EventNum(76,333,1,0,0) end;--初识王语嫣计数器
 do return end;

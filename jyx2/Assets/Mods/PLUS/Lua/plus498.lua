@@ -11,6 +11,7 @@ Talk(49, "不是，我是和师父他们走丢了，正想办法该如何回<col
 Talk(0, "哦，原来是<color=Red>少林寺</color>的高僧，武功定是很高喽！", "", 1);
 Talk(49, "哪里，小僧武功低微，在寺中是打杂的。", "", 0);
 ModifyEvent(-2, -2, -2, -2, 499, -1, -1, -2, -2, -2, -2, -2, -2);
+if jyx2_CheckEventCount(49,333,0) == 0 then Add3EventNum(49,333,1,0,0) end;--初识虚竹计数器
 if AskJoin () == true then goto label0 end;
     Talk(0, "小和尚，那改天我们<color=Red>少林寺</color>再见。", "", 1);
     do return end;

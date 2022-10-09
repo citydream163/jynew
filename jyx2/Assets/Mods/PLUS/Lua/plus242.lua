@@ -12,6 +12,7 @@ if UseItem(127) == true then goto label0 end;
     Talk(35, "唉！<color=Yellow>令狐冲</color>一生仗义直行，从不做违背良心之事，到头来却落至这个结果。这件事的始末也非三言两语可道尽。唉，不谈这个，咱们喝酒吧。", "", 0);
     Talk(0, "不知令狐兄今后有何打算？", "", 1);
     Talk(35, "…………", "", 0);
+	if jyx2_CheckEventCount(35,333,0) == 0 then Add3EventNum(35,333,1,0,0) end;--初识令狐冲计数器
     if AskJoin () == true then goto label1 end;
         Talk(0, "＜这个玩物丧志的家伙，整天就只知道喝酒，跟他在一起真是浪费我找书的时间。＞啊！令狐兄，我突然想起还有重要的事要办，我先失陪了。", "", 1);
         do return end;

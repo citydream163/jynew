@@ -15,6 +15,7 @@ if TryBattle(48) == true then goto label0 end;
     Talk(36, "少侠武功高强，请少侠帮我救出家父，我<color=Yellow>林平之</color>这辈子愿做牛做马服侍你。若少侠愿意帮忙，我<color=Red>福威镖局</color>中的任何物品，少侠都可随意取用。这其中还包括了一本“<color=orange>松风剑谱</color>”", "", 0);
 	Talk(36, "是我从<color=Red>青城派</color>那几个小贼身上偷来的。想研究看看他们的剑招上是不是有什么破绽。", "", 0);
     Talk(0, "说这么多做什么，我就帮你上<color=Red>青城派</color>看看好了。", "", 1);
+	if jyx2_CheckEventCount(36,333,0) == 0 then Add3EventNum(36,333,1,0,0) end;--初识林平之计数器
     ModifyEvent(-2, -2, -2, -2, 298, -1, -1, -2, -2, -2, -2, -2, -2);
     ModifyEvent(-2, 2, -2, -2, -1, -1, 299, -2, -2, -2, -2, -2, -2);
     if JudgeEventNum(3, -1) == true then goto label1 end;

@@ -12,4 +12,5 @@ Talk(9, "我本自以为将死，所以一直待在这，但经你这么一说�
 Talk(0, "你义父？", "", 1);
 Talk(9, "是啊。我义父是金毛狮王<color=Yellow>谢逊</color>，他双眼失明，还一个人待在无人荒岛上。", "", 0);
 ModifyEvent(-2, -2, -2, -2, 75, 71, -2, -2, -2, -2, -2, -2, -2);
+if jyx2_CheckEventCount(9,333,0) == 0 then Add3EventNum(9,333,1,0,0) end;--初识张无忌计数器
 do return end;

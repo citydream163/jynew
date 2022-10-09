@@ -23,4 +23,5 @@ Talk(2, "<color=Yellow>程灵素</color>。", "", 0);
 Talk(0, "那，灵姑娘，告辞了。", "", 1);
 ModifyEvent(-2, -2, -2, -2, 40, 41, -2, -2, -2, -2, -2, -2, -2);
 SetFlag("ShowLocationName.药王庄",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(2,333,0) == 0 then Add3EventNum(2,333,1,0,0) end;--初识程灵素计数器
 do return end;

@@ -11,6 +11,7 @@ Talk(0, "原来姑娘还懂奇门五行之术，这对闯荡江湖很有用呢�
 Talk(63, "是有点用处，有些平常人看不出的布局，我略懂一些。", "", 0);
 ModifyEvent(-2, -2, -2, -2, 403, -1, -1, -2, -2, -2, -2, -2, -2);
 SetFlag("ShowLocationName.程英居",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(63,333,0) == 0 then Add3EventNum(63,333,1,0,0) end;--初识程英计数器
 if AskJoin () == true then goto label0 end;
     Talk(0, "打扰姑娘多时，在下告退。", "", 1);
     do return end;

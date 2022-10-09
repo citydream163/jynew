@@ -7,4 +7,5 @@ Talk(0, "不是的，我来是想问你有关一本书的下落……", "", 1);
 Talk(1, "哼！又是来找《<color=#A564DB>雪山飞狐</color>》的狂妄小子。废话休说，动手吧！", "", 0);
 ModifyEvent(-2, -2, -2, -2, 2, -2, -2, -2, -2, -2, -2, -2, -2);
 SetFlag("ShowLocationName.胡斐居",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(1,333,0) == 0 then Add3EventNum(1,333,1,0,0) end;--初识胡斐计数器
 do return end;

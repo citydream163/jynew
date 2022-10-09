@@ -67,4 +67,6 @@ if TryBattle(87) == true then goto label0 end;
         AddEthics(2);
         AddRepute(2);
 		SetFlag("ShowLocationName.破庙",1);--大地图显示当前地图名
+		if jyx2_CheckEventCount(47,333,0) == 0 then Add3EventNum(47,333,1,0,0) end;--初识阿紫计数器
+		if jyx2_CheckEventCount(48,333,0) == 0 then Add3EventNum(48,333,1,0,0) end;--初识游坦之计数器
 do return end;

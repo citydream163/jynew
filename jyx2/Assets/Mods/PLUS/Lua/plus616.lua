@@ -39,6 +39,7 @@ if TryBattle(98) == true then goto label0 end;
     Talk(0, "＜苗族女子真大胆，说话真直接。＞", "", 1);
     AddRepute(1);
     ChangeMMapMusic(3);
+	if jyx2_CheckEventCount(25,333,0) == 0 then Add3EventNum(25,333,1,0,0) end;--初识蓝凤凰计数器
     if AskJoin () == true then goto label1 end;
         Talk(0, "姑娘好意心领了，在下一介莽夫，实不敢耽搁姑娘的青春。", "", 1);
         do return end;

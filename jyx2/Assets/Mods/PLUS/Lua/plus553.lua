@@ -5,6 +5,7 @@ Talk(45, "哪里，这是江湖朋友抬爱在下了。", "", 0);
 Talk(0, "如果连阎罗王都怕了薛先生你，想必医术定是非常高明了。", "", 1);
 Talk(45, "这位小兄弟今天来不知是……", "", 0);
 SetFlag("ShowLocationName.薛慕华居",1);--大地图显示当前地图名
+if jyx2_CheckEventCount(45,333,0) == 0 then Add3EventNum(45,333,1,0,0) end;--初识薛慕华计数器
 if AskJoin () == true then goto label0 end;
     Talk(0, "没什么事，在下途经这柳宗镇，听说神医住在附近，特来拜见。", "", 1);
     do return end;

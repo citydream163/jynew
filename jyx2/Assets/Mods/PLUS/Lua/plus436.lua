@@ -1,6 +1,7 @@
 ModifyEvent(7, 6, 0, 0, -1, -1, -1, -1, -1, -1, 0, -2, -2);
 jyx2_ReplaceSceneObject("7", "NPC/杨过", "");
 AddEthics(5);
+if jyx2_CheckEventCount(59,333,0) == 0 then Add3EventNum(59,333,1,0,0) end;--初识小龙女计数器
 if InTeam(58) == false then goto label0 end;
     Talk(58, "龙儿！", "", 1);
     jyx2_ReplaceSceneObject("", "NPC/杨过", "1");--杨过出现

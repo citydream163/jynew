@@ -9,7 +9,7 @@ Talk(17, "好，那我先回<color=Red>蝴蝶谷</color>了，待少侠有空时
 Talk(0, "前辈慢走。", "", 1);
 ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2); --移除王难姑
 jyx2_ReplaceSceneObject("", "NPC/王难姑", ""); 
-
+if jyx2_CheckEventCount(17,333,0) == 0 then Add3EventNum(17,333,1,0,0) end;--初识王难姑计数器
 ModifyEvent(44, 1, 1, 1, 123, -1, -1, 5290, 5290, 5290, -2, -2, -2); --在蝴蝶谷将王难姑设置为显示
 jyx2_ReplaceSceneObject("44", "NPC/王难姑", "1"); 
 

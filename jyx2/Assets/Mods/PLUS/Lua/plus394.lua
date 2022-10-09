@@ -30,4 +30,5 @@ ModifyEvent(-2, 7, -2, -2, -1, -1, 398, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, 8, -2, -2, -1, -1, 398, -2, -2, -2, -2, -2, -2);
 ModifyEvent(-2, 9, -2, -2, -1, -1, 398, -2, -2, -2, -2, -2, -2);
 ChangeMMapMusic(3);
+if jyx2_CheckEventCount(58,333,0) == 0 then Add3EventNum(58,333,1,0,0) end;--初识杨过计数器
 do return end;

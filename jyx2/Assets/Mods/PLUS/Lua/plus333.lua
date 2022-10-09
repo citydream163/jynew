@@ -7,5 +7,6 @@ Talk(38, "是啊！老伯伯先是教我练泥人上的功夫，练到后来，�
 Talk(0, "原来兄台练功时走火入魔！", "", 1);
 Talk(38, "啊！又来了……我……我不，不跟你说了。", "", 0);
 ModifyEvent(-2, -2, -2, -2, 334, 335, -2, -2, -2, -2, -2, -2, -2);
+if jyx2_CheckEventCount(38,333,0) == 0 then Add3EventNum(38,333,1,0,0) end;--初识石破天计数器
 SetFlag("ShowLocationName.摩天崖",1);--大地图显示当前地图名
 do return end;

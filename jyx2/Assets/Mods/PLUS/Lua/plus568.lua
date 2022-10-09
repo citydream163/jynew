@@ -13,4 +13,5 @@ if TryBattle(90) == true then goto label0 end;
     Talk(44, "拜就拜，我岳老二向来说话算话．你是我师父了。", "", 0);
     ModifyEvent(-2, -2, -2, -2, 569, -1, -1, -2, -2, -2, -2, -2, -2);
     AddRepute(3);
+	if jyx2_CheckEventCount(44,333,0) == 0 then Add3EventNum(44,333,1,0,0) end;--初识岳老三计数器
 do return end;
