@@ -23,7 +23,10 @@ RunTo = luaBridge.RunTo--跑路
 function GetCurrentEventID()
 	return tonumber(luaBridge.GetCurrentEventID());
 end
-
+function TryBattle()
+	Add3EventNum(70,998,1,0,0);--战斗计数器
+	return util.async_to_sync(luaBridge.TryBattle());
+end
 
 
 --以下为lua全局函数

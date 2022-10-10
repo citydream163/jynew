@@ -1,5 +1,5 @@
 if UseItem(202) == true then goto label0 
---elseif UseItem(204) == true then goto label1
+elseif UseItem(204) == true then goto label5
 end;
 do return end;
 :: label0 ::
@@ -117,4 +117,7 @@ if not(tTaget == 0) then
 	jyx2_MovePlayer(""..arrm[tTaget].."","Level/NavigateObjs");--飞
 	Add3EventNum(70,999,0,months[tTaget],0);--旅行日程计数器
 end;
+do return end;
+:: label5 ::
+Talk(106,"客倌见谅，因车马费谈不拢，本服务暂停，何时恢复营业请留意本店公告栏。");
 do return end;
