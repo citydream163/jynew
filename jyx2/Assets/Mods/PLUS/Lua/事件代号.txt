@@ -1030,7 +1030,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 
 2122主角居遇袭
 2123首次出门检测器
-2124主角居练功
+2124主角居练功触发器
 2125开启迷宫入口
 2126关闭迷宫入口
 2127激活2126

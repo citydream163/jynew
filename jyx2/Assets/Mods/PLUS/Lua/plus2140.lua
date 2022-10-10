@@ -35,7 +35,7 @@ for i = 1, #txt do
 	if (talkid == 76) then
 	talkid = talkid + 33;--王语嫣修正
 	end;
-	if (GetCurrentEventID() == battlenum) then
+	if (tonumber(GetCurrentEventID()) == battlenum) then
 		Talk(0, talktxt1);
 		Talk(talkid, "好。");
 		if TryBattle(battlenum) == false then goto label0 end;

@@ -23,7 +23,7 @@ using i18n.TranslatorDef;
 using Jyx2Configs;
 using Jyx2.Middleware;
 using UnityEngine.Rendering.PostProcessing;
-using IFix;
+
 namespace Jyx2
 {
     public class JYX2EventContext
@@ -226,7 +226,7 @@ namespace Jyx2
         private static bool _battleResult = false;
 
         public static bool isQuickBattle = false;
-#if !INJECTFIX_PATCH_ENABLE 
+   
 	   //开始一场战斗
         public static void TryBattle(int battleId, Action<bool> callback)
         {
@@ -258,48 +258,7 @@ namespace Jyx2
                 });
             });
         }
-#else
-        [IFix.Patch]
-        public static void TryBattle(int battleId, Action<bool> callback)
-        {
-            if(isQuickBattle)
-            {
-                ShowYesOrNoSelectPanel("是否战斗胜利？", callback);
-                return;
-            }
 
-            bool isWin = false;
- 
-            //记录当前地图和位置
-            Jyx2ConfigMap currentMap = LevelMaster.GetCurrentGameMap();
-            var pos = LevelMaster.Instance.GetPlayerPosition();
-            var rotate = LevelMaster.Instance.GetPlayerOrientation();
-            
-            LevelLoader.LoadBattle(battleId, (ret) =>
-            {
-                LevelLoader.LoadGameMap(currentMap, new LevelMaster.LevelLoadPara()
-                {
-                    //还原当前地图和位置
-                    loadType = LevelMaster.LevelLoadPara.LevelLoadType.ReturnFromBattle,
-                    Pos = pos,
-                    Rotate = rotate,
-                }, () =>
-                {
-                    isWin = (ret == BattleResult.Win);
-                    callback(isWin);
-                });
-            });
-			Add3EventNum(70,998,1,0,0);//战斗计数器
-        }
-#endif
-#if INJECTFIX_PATCH_ENABLE
-[IFix.Interpret]
-		///跑路--by citydream
-        public static void RunTo(int toName)
-        {
-			jyx2_WalkFromToAsync(-1,toName).Forget();
-		}
-#endif
         private static async UniTask<bool> TryBattleAsync(int battleId)
         {
             bool finished = false;
@@ -1005,7 +964,7 @@ namespace Jyx2
         
         public static void DarkScence(Action callback)
         {
-            var blackCover = LevelMaster.Instance.transform.Find("UI/BlackCover");
+            var blackCover = LevelMaster.Instance.BlackCover;
             if (blackCover == null)
             {
                 Debug.LogError("DarkScence error，找不到LevelMaster/UI/BlackCover");
@@ -1014,8 +973,7 @@ namespace Jyx2
             }
 
             blackCover.gameObject.SetActive(true);
-            var img = blackCover.GetComponent<Image>();
-            img.DOFade(1, 1).OnComplete(() => callback());
+            blackCover.DOFade(1, 1).OnComplete(() => callback());
         }
 
         public static void Rest()
@@ -1059,16 +1017,22 @@ namespace Jyx2
         
         public static void LightScence(Action callback)
         {
-            var blackCover = LevelMaster.Instance.transform.Find("UI/BlackCover");
+            var blackCover = LevelMaster.Instance.BlackCover;
             if (blackCover == null)
             {
-                Debug.LogError("DarkScence error，找不到LevelMaster/UI/BlackCover");
+                Debug.LogError("LightScene error，找不到LevelMaster/UI/BlackCover");
                 callback();
                 return;
             }
 
-            var img = blackCover.GetComponent<Image>();
-            img.DOFade(0, 1).OnComplete(() =>
+            if (!blackCover.gameObject.activeSelf)
+            {
+                Debug.Log("已经是SceneLight状态，不必再延迟逻辑了");
+                callback();
+                return;
+            }
+
+            blackCover.DOFade(0, 1).OnComplete(() =>
             {
                 blackCover.gameObject.SetActive(false);
                 callback();
