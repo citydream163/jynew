@@ -20,6 +20,12 @@ function MiniMapOff()
 	jyx2_ReplaceSceneObject("1000", "MiniMap/Display","");
 end
 RunTo = luaBridge.RunTo--跑路
+function GetCurrentEventID()
+	return tonumber(luaBridge.GetCurrentEventID());
+end
+
+
+
 --以下为lua全局函数
 
 --日历开始

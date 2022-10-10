@@ -1,21 +1,21 @@
 if UseItem(202) == true then goto label0 
-elseif UseItem(204) == true then goto label1
+--elseif UseItem(204) == true then goto label1
 end;
 do return end;
 :: label0 ::
 if jyx2_CheckEventCount(1,999,0) == 1 then
-tTalk0 = "真有半仙说的那么玄吗？快试试看。";
-oTalk0 = "哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。";
+	tTalk0 = "真有半仙说的那么玄吗？快试试看。";
+	oTalk0 = "哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。";
 elseif jyx2_CheckEventCount(1,999,0) == 2 then
-tTalk0 = "<color=blue>神游券</color>真神奇，快点继续跑啊。";
-oTalk0 = "哈哈哈哈，遨游寰宇，神游天下，爽啊。还得找那半仙多拿几张<color=blue>神游券</color>去。";
+	tTalk0 = "<color=blue>神游券</color>真神奇，快点继续跑啊。";
+	oTalk0 = "哈哈哈哈，遨游寰宇，神游天下，爽啊。还得找那半仙多拿几张<color=blue>神游券</color>去。";
 elseif jyx2_CheckEventCount(1,999,0) == 3 then
-tTalk0 = "跑的有点慢啊，飞起来。";
-oTalk0 = "风在脑后，鸟在身旁。让我飞起来吧。";
+	tTalk0 = "跑的有点慢啊，飞起来。";
+	oTalk0 = "风在脑后，鸟在身旁。让我飞起来吧。";
 Add3EventNum(1,999,1,0,0);--次数计数器加1
 else
-tTalk0 = "我飞……";
-oTalk0 = "";
+	tTalk0 = "我飞……";
+	oTalk0 = "";
 end;
 AddItemWithoutHint(202, -1);
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));
@@ -93,21 +93,21 @@ Talk(0,oTalk0);
 --ModifyEvent(1, 20, -2, -2, 2089, 2088, -2, -2, -2, -2, -2, -2, -2);
 do return end;
 :: label1 ::
-local arrt = {};
+arrt = {};
 arrt[1] = {1, "河洛客栈",{8,7,5,4}};
 arrt[2] = {3, "有间客栈",{8,5,3,4}};
 arrt[3] = {40, "悦来客栈",{7,5,2,3}};
 arrt[4] = {60, "龙门客栈",{5,3,2,1}};
 arrt[5] = {61, "高升客栈",{4,4,3,1}};
-local arrm = {};
-local taget = {};
-local months = arrt[GetCurrentEventID()][3];
+arrm = {};
+taget = {};
+months = arrt[tonumber(GetCurrentEventID())][3];
 j = 1;
 for i = 1, #arrt do
 	if not(arrt[i][1] == GetCurrentEventID()) then
-	arrm[j] = arrt[i][1];
-	taget[j] = arrt[i][2];
-	j = j + 1;
+		arrm[j] = arrt[i][1];
+		taget[j] = arrt[i][2];
+		j = j + 1;
 	end;
 end;
 tTaget = ShowSelectPanel(0,"去哪里？", {"取消",""..taget[1].."", ""..taget[2].."", ""..taget[3].."",""..taget[4]..""});
