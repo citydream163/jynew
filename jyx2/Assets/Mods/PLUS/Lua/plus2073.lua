@@ -47,4 +47,5 @@ jyx2_ReplaceSceneObject("",Text4,"1");
 
 end
 Talk(0, "有动静。", "", 0);
+jyx2_Wait(0.5);
 do return end;

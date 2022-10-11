@@ -41,4 +41,5 @@ jyx2_ReplaceSceneObject("",Text2,"1");
 
 end
 Talk(0, "踩到机关了。", "", 1);
+jyx2_Wait(0.5);
 do return end;

@@ -174,5 +174,5 @@ ModifyEvent(-2, k21, 0, 0, -1, -1, tatl20, -1, -1, -1, -2, -2, -2);
 local tatl21 = math.random(2071,2073);
 ModifyEvent(-2, k22, 0, 0, -1, -1, tatl21, -1, -1, -1, -2, -2, -2);
 --随机事件选择器结束
-
+jyx2_Wait(0.5);
     do return end;

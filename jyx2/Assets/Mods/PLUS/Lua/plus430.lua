@@ -4,4 +4,5 @@ jyx2_ReplaceSceneObject("", "NPC/一灯", ""); --一灯去百花谷
 jyx2_ReplaceSceneObject("20", "NPC/yideng", "1"); 
 ModifyEvent(20, 14, 1, 1, 414, -1, -1, 6152, 6152, 6152, -2, -2, -2);--by fanyu|启动脚本414，更改贴图。场景20-编号14
 AddEthics(2);
+jyx2_Wait(0.5);
 do return end;
