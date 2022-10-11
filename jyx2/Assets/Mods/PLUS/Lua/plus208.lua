@@ -4,9 +4,20 @@ Talk(22, "上回是老朽太轻敌了，你还想试试看吗？", "", 0);
 if AskBattle() == true then goto label0 end;
     do return end;
 ::label0::
+zlcuplv = 10;
+AddHpWithoutHint(22, (8+math.random (0, 3))*3*zlcuplv);
+AddMpWithoutHint(22, math.random (3, 8)*4*zlcuplv);
     if TryBattle(38) == true then goto label1 end;
+		if HaveItem(185) then goto label2 end;
         Dead();
         do return end;
 ::label1::
         LightScence();
+do return end;
+::label2::
+AddItem(185,-1);
+Talk(22, "此物你带在身边有什么用？还是让我来研究一下吧。");
+SetOneMagic(22, 0, 60, 900);
+SetSexual(22, 2);
+AddWuchang(22, 20);
 do return end;

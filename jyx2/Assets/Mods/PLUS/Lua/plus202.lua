@@ -42,16 +42,13 @@ do return end;
 	ModifyEvent(-2, 50, 1, 1, -1, -1, -1, 5172, 5172, 5172, -2, -2, -2);
 	jyx2_ReplaceSceneObject("","NPC/五岳剑派","1");
 	ModifyEvent(-2, -2, -2, -2, -1, -1, 215, -2, -2, -2, -2, -2, -2);
-	zCounthb = jyx2_CheckEventCount(70,999,0);--天数计数器取值
-	pCounthb = jyx2_CheckEventCount(70,998,0);--战斗计数器取值
-	rCounthb = jyx2_CheckEventCount(70,997,0);--休息计数器取值
 	t = 0;
-	if (zCounthb + pCounthb + rCounthb) < 14 then
-	t = 14 - (zCounthb + pCounthb + rCounthb);
-	elseif (zCounthb + pCounthb + rCounthb) > 14 then
-	t = 44 - (zCounthb + pCounthb + rCounthb) % 30;
+	if Calendar(6) < 14 then
+		t = 14 - Calendar(6);
+	elseif Calendar(6) > 14 then
+		t = 44 - Calendar(6) % 30;
 	end;
-	Add3EventNum(70,999,t,0,0);
+	Add3EventNum(70,999,t,0,0);--十五日召开
 	if InTeam(35) == true then goto label0 end;
 		ModifyEvent(-2, 56, -2, -2, -1, -1, 206, -2, -2, -2, -2, -2, -2);
 		ModifyEvent(-2, 57, -2, -2, -1, -1, 214, -2, -2, -2, -2, -2, -2);

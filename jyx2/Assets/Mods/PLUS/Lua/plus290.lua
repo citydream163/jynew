@@ -1,3 +1,8 @@
+if HaveItem(160) then goto label2 end;
+SetOneMagic(36, 0, 31, 100);
+goto label2
+    do return end;
+::label2::
 Talk(0, "林兄剑法不知练的怎样了？", "", 1);
 Talk(36, "我迫不及待想上四川青城，诛灭他全派为我双亲报仇。可是以我现在的功力，恐怕无法办到。", "", 0);
 if AskJoin () == true then goto label0 end;
@@ -13,8 +18,11 @@ if AskJoin () == true then goto label0 end;
         DarkScence();
         ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
         jyx2_ReplaceSceneObject("", "NPC/林平之", "");--加入队伍
-        ModifyEvent(36, 3, -2, -2, 315, -1, -1, -2, -2, -2, -2, -2, -2);
+        ModifyEvent(36, 0, -2, -2, 315, -1, -1, -2, -2, -2, -2, -2, -2);
+		ModifyEvent(36, 1, -2, -2, 315, -1, -1, -2, -2, -2, -2, -2, -2);
+		ModifyEvent(36, 2, -2, -2, 315, -1, -1, -2, -2, -2, -2, -2, -2);
+		ModifyEvent(36, 3, -2, -2, 315, -1, -1, -2, -2, -2, -2, -2, -2);
         LightScence();
         Join(36);
-        AddEthics(-4);
+        --AddEthics(-4);
 do return end;

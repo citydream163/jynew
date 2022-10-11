@@ -1,8 +1,8 @@
-if jyx2_CheckEventCount(36,443,0) == 0 then
+if jyx2_CheckEventCount(36,442,0) == 0 then
 	Add3EventNum(36,444,1,0,0);--青城四秀计数器
-	Add3EventNum(36,443,jyx2_CheckEventCount(36,444,0),0,0);--青城四秀点击顺序计数器
+	Add3EventNum(36,442,jyx2_CheckEventCount(36,444,0),0,0);--青城三秀点击顺序计数器
 end;
-if qcsxName(jyx2_CheckEventCount(36,443,0),0) == "侯人雄" then goto label0 end;
+if qcsxName(jyx2_CheckEventCount(36,442,0),0) == "侯人雄" then goto label0 end;
 	Talk(86, "哼！废话少说，要杀要剐随你。");
 do return end;
 ::label0::
@@ -21,7 +21,8 @@ Talk(0, "这话听来还蛮舒服的。你本质还不坏，别跟着这坏人�
 Talk(86, "是，是……");
 DarkScence();
 ModifyEvent(-2, -2, 0, 0, -1, -1, -1, -1, -1, -1, -2, -2, -2);
-jyx2_ReplaceSceneObject("", "NPC/青城弟子3", "");-- 移除人物
+jyx2_ReplaceSceneObject("", "NPC/青城弟子2", "");-- 移除人物
 ModifyEvent(56, 1, -2, -2, 289, -1, -1, -2, -2, -2, -2, -2, -2);
 LightScence();
 do return end;
+

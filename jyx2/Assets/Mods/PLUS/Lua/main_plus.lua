@@ -41,6 +41,7 @@ function Calendar(num)
 	local r2Countzj = jyx2_CheckEventCount(70,997,1);--团休计数器取值
 	local r3Countzj = jyx2_CheckEventCount(70,997,2);--战休计数器取值
 	local rCountzj = r1Countzj + r2Countzj + r3Countzj;--休计数器取值
+	local sipdays = zCountzj + pCountzj + rCountzj;--仅合计日数
 	local yend = xCountzj * 90 + yCountzj * 30 + zCountzj + pCountzj + rCountzj;--合计游戏日
 	yCountzj = yCountzj + (zCountzj + pCountzj + rCountzj) // 30;--//取商的整数部分
 	xCountzj = xCountzj + yCountzj // 3;
@@ -135,6 +136,8 @@ function Calendar(num)
 		return pCountzj;
 	elseif (num == 5) then--休息总次数
 		return rCountzj;
+	elseif (num == 6) then--仅合计日数
+		return sipdays;
 	else--简历
 		local text = "游戏历·" .. x .. "年" .. S;
 		return text;
@@ -244,3 +247,35 @@ function MapLight(mapid,switch)
 	end;
 end;
 --光柱结束
+
+--青城四秀开始
+function qcsxName(n,m)
+qcsxname = {};
+qcsxname[0] = "侯人英";
+qcsxname[1] = "罗人杰";
+qcsxname[2] = "于人豪";
+qcsxname[3] = "侯人雄";
+callqcsxname = {};
+callqcsxname[0] = "侯兄";
+callqcsxname[1] = "罗兄";
+callqcsxname[2] = "于兄";
+callqcsxname[3] = "侯兄";
+	if n == 1 and m == 0 then
+		return qcsxname[0];
+	elseif n == 1 and m == 1 then
+		return callqcsxname[0];
+	elseif n == 2 and m == 0 then
+		return qcsxname[1];
+	elseif n == 2 and m == 1 then
+		return callqcsxname[1];	
+	elseif n == 3 and m == 0 then
+		return qcsxname[2];
+	elseif n == 3 and m == 1 then
+		return callqcsxname[2];	
+	elseif n == 4 and m == 0 then
+		return qcsxname[3];
+	elseif n == 4 and m == 1 then
+		return callqcsxname[3];
+	end;
+end
+--青城四秀结束
