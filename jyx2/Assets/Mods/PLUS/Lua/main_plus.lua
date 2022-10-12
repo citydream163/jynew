@@ -137,6 +137,8 @@ function Calendar(num)
 		return rCountzj;
 	elseif (num == 6) then--仅合计日数
 		return sipdays;
+	elseif (num == 7) then--仅合计月数
+		return yCountzj;
 	else--简历
 		local text = "游戏历·" .. x .. "年" .. S;
 		return text;
