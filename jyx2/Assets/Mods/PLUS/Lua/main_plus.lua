@@ -1,4 +1,4 @@
-math.randomseed(tostring(os.time()):reverse():sub(1, 7));
+math.randomseed(tostring(os.time()):reverse():sub(1, 7));--随机数种子
 tempTeamarr = {0,1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
 Exp = { 50, 150, 300, 500, 750, 1050, 1400, 1800, 2250, 2750, 3850, 5050, 6350, 7750, 9250, 10850, 12550, 14350, 16750, 18250, 21400, 24700, 28150, 31750, 35500, 39400, 43450, 47650, 52000, 60000, 68250, 76750, 85500, 94500, 105000, 117000, 130000, 145000, 163000, 183000, 205000,	230000,	258000,	288000,	320000,	355000,	393000,	433000,	478000,	528000 };
 function Rest()
@@ -27,7 +27,6 @@ end
 	-- Add3EventNum(70,998,1,0,0);--战斗计数器
 	-- return util.async_to_sync(luaBridge.TryBattle(m));
 -- end
-
 
 --以下为lua全局函数
 
@@ -131,7 +130,7 @@ function Calendar(num)
 	elseif (num == 2) then--游戏总日数
 		return yend;
 	elseif (num == 3) then--胡混日数
-		return zCountzj;	
+		return zCountzj;
 	elseif (num == 4) then--战斗总次数
 		return pCountzj;
 	elseif (num == 5) then--休息总次数
