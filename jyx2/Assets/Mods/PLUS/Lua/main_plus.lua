@@ -339,6 +339,8 @@ Scroll[92]={275,"乾坤大挪移"};
 Scroll[93]={500,"葵花宝典"};
 Scroll[94]={570,"九阴真经"};
 Scroll[95]={350,"九阳真经"};
+Scroll[185]={1200,"林震南遗言"};
+Scroll[193]={12,"金盆洗手请帖"};
 	if col==0 then
 		if Scroll[id][1] == nil then
 			return "";

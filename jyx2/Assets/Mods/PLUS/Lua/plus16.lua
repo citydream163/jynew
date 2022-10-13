@@ -54,6 +54,8 @@ elseif UseItem(92) == true then goto label92
 elseif UseItem(93) == true then goto label93
 elseif UseItem(94) == true then goto label94
 elseif UseItem(95) == true then goto label95
+elseif UseItem(185) == true then goto label185
+elseif UseItem(193) == true then goto label193
 else
 	Talk(0, "哇！好痛！这烛火还真烫。");
 end;
@@ -335,4 +337,15 @@ do return end;
     Talk(0, "<color=orange>"..PaperScroll(95,1).."</color>留着也没用了，一把火烧了才干净！");
 	AddItem(95,-1);
 	AddExp(0,PaperScroll(95,0));
+do return end;
+::label185::
+    Talk(0, "<color=blue>"..PaperScroll(185,1).."</color>留着也没用了，一把火烧了才干净！");
+	AddItem(185,-1);
+	AddExp(0,PaperScroll(185,0));
+	AddEthics(-6);
+do return end;
+::label193::
+    Talk(0, "<color=blue>"..PaperScroll(193,1).."</color>留着也没用了，一把火烧了才干净！");
+	AddItem(193,-1);
+	AddExp(0,PaperScroll(193,0));
 do return end;
