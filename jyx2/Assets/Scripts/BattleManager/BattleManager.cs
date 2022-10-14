@@ -145,73 +145,6 @@ namespace Jyx2
             await new BattleLoop(this).StartLoop();
         }
         
-#if !INJECTFIX_PATCH_ENABLE
-        public void OnBattleEnd(BattleResult result)
-        {
-            switch (result)
-            {
-                case BattleResult.Win:
-                {
-                    string bonusText = CalExpGot(m_battleParams.battleData);
-                    //---------------------------------------------------------------------------
-                    //GameUtil.ShowFullSuggest(bonusText, "<color=yellow><size=50>战斗胜利</size></color>", delegate
-                    //{
-                    //    EndBattle();
-                    //    m_battleParams.callback?.Invoke(result);
-                    //    m_battleParams = null;
-                    //});
-                    //---------------------------------------------------------------------------
-                    //特定位置的翻译【战斗胜利的提示】
-                    //---------------------------------------------------------------------------
-                    GameUtil.ShowFullSuggest(bonusText, "<color=yellow>战斗胜利</color>".GetContent(nameof(BattleManager)), delegate
-                    {
-                        EndBattle();
-                        m_battleParams.callback?.Invoke(result);
-                        m_battleParams = null;
-                    });
-                    //---------------------------------------------------------------------------
-                    //---------------------------------------------------------------------------
-                    break;
-                }
-                case BattleResult.Lose:
-                case BattleResult.Surrender:
-                {
-
-                    //---------------------------------------------------------------------------
-                    //GameUtil.ShowFullSuggest("胜败乃兵家常事，请大侠重新来过。", "<color=red><size=80>战斗失败！</size></color>", delegate
-                    //{
-                    //    EndBattle();
-                    //    m_battleParams.callback?.Invoke(result);
-                    //    //if (m_battleParams.backToBigMap) //由dead指令实现返回主界面逻辑
-                    //    //    LevelLoader.LoadGameMap("Level_BigMap");
-                    //    m_battleParams = null;
-                    //});
-                    //---------------------------------------------------------------------------
-                    //特定位置的翻译【战斗失败的提示】
-                    //---------------------------------------------------------------------------
-                    GameUtil.ShowFullSuggest("胜败乃兵家常事，请大侠重新来过。".GetContent(nameof(BattleManager)), "<color=red>战斗失败！</color>".GetContent(nameof(BattleManager)), delegate
-                    {
-                        EndBattle();
-                        m_battleParams.callback?.Invoke(result);
-                        //if (m_battleParams.backToBigMap) //由dead指令实现返回主界面逻辑
-                        //    LevelLoader.LoadGameMap("Level_BigMap");
-                        m_battleParams = null;
-                    });
-                    //---------------------------------------------------------------------------
-                    //---------------------------------------------------------------------------
-                    break;
-                }
-            }
-            
-            //所有人至少有1HP
-            foreach (var role in GameRuntimeData.Instance.GetTeam())
-            {
-                if (role.Hp <= 0)
-                    role.Hp = 1;
-            }
-        }
-#else
-    [IFix.Patch]
     public void OnBattleEnd(BattleResult result)
     {
         switch (result)
@@ -229,7 +162,11 @@ namespace Jyx2
             }
             case BattleResult.Lose:
             {
-				string bonusText2 = CalExpGot2(m_battleParams.battleData);
+				string bonusText2 = "";//modified by citydream
+				if (RuntimeEnvSetup.CurrentModId == "plus")
+				{
+					bonusText2 = CalExpGot2(m_battleParams.battleData);
+				}
                 GameUtil.ShowFullSuggest("<color=yellow>胜败乃兵家常事，请大侠重新来过。</color>\n"+bonusText2, "<color=red>战斗失败！</color>".GetContent(nameof(BattleManager)), delegate
                 {
                     EndBattle();
@@ -246,9 +183,6 @@ namespace Jyx2
                 role.Hp = 1;
         }
     }
-#endif
-#if INJECTFIX_PATCH_ENABLE
-	[IFix.Interpret]
     string CalExpGot2(Jyx2ConfigBattle battleData)
     {
         List<RoleInstance> alive_teammate = m_BattleModel.Teammates;
@@ -346,7 +280,7 @@ namespace Jyx2
 
         return bonusTextBuilder.ToString();
     }
-#endif
+
         //清扫战场
         public void EndBattle()
         {

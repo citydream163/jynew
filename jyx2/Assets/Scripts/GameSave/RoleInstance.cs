@@ -119,46 +119,6 @@ namespace Jyx2
         }
 
 
-#if !INJECTFIX_PATCH_ENABLE
-        void InitData()
-        {
-            //CG 初始化
-            Name = Data.Name;
-            Sex = (int)Data.Sexual;
-            Level = Data.Level;
-            Exp = Data.Exp;
-            Hp = Data.MaxHp;
-            PreviousRoundHp = Hp;
-            MaxHp = Data.MaxHp;
-            Mp = Data.MaxMp;
-            MaxMp = Data.MaxMp;
-            Tili = GameConst.MAX_ROLE_TILI;
-            Weapon = Data.Weapon;
-            Armor = Data.Armor;
-            MpType = Data.MpType;
-            Attack = Data.Attack;
-            Qinggong = Data.Qinggong;
-            Defence = Data.Defence;
-            Heal = Data.Heal;
-            UsePoison = Data.UsePoison;
-            DePoison = Data.DePoison;
-            AntiPoison = Data.AntiPoison;
-            Quanzhang = Data.Quanzhang;
-            Yujian = Data.Yujian;
-            Shuadao = Data.Shuadao;
-            Qimen = Data.Qimen;
-            Anqi = Data.Anqi;
-            Wuxuechangshi = Data.Wuxuechangshi;
-            Pinde = Data.Pinde;
-            AttackPoison = Data.AttackPoison;
-            Zuoyouhubo = Data.Zuoyouhubo;
-            IQ = Data.IQ;
-            HpInc = Data.HpInc;
-
-            ResetItems();
-        }
-#else
-        [IFix.Patch]
         void InitData()
         {
             //CG 初始化
@@ -196,7 +156,7 @@ namespace Jyx2
 
             ResetItems();
         }
-#endif
+
 
         public void ResetForBattle()
         {
@@ -255,45 +215,6 @@ namespace Jyx2
         /// 
         /// </summary>
         /// <returns></returns>
-#if !INJECTFIX_PATCH_ENABLE
-        public void LevelUp()
-        {
-            Level++;
-            Tili = GameConst.MAX_ROLE_TILI;
-            MaxHp += (HpInc + Random.Range(0, 3)) * 3;
-            SetHPAndRefreshHudBar(this.MaxHp);
-            //当0 <= 资质 < 30, a = 2;
-            //当30 <= 资质 < 50, a = 3;
-            //当50 <= 资质 < 70, a = 4;
-            //当70 <= 资质 < 90, a = 5;
-            //当90 <= 资质 <= 100, a = 6;
-            //a = random(a) + 1;
-            int a = Random.Range(0, (int)Math.Floor((double)(IQ - 10) / 20) + 2) + 1;
-            MaxMp += (9 - a) * 4;
-            Mp = MaxMp;
-
-            Hurt = 0;
-            Poison = 0;
-
-            Attack += a;
-            Qinggong += a;
-            Defence += a;
-
-            Heal = checkUp(Heal, 20, 3);
-            DePoison = checkUp(DePoison, 20, 3);
-            UsePoison = checkUp(UsePoison, 20, 3);
-
-            Quanzhang = checkUp(Quanzhang, 20, 3);
-            Yujian = checkUp(Yujian, 20, 3);
-            Shuadao = checkUp(Shuadao, 20, 3);
-            Anqi = checkUp(Anqi, 20, 3);
-
-            this.Limit(1, 1, 1);
-
-            Debug.Log($"{this.Name}升到{this.Level}级！");
-        }
-#else
-        [IFix.Patch]
 		public void LevelUp()
         {
             Level++;
@@ -325,15 +246,19 @@ namespace Jyx2
             Yujian = checkUp(Yujian, 20, 3);
             Shuadao = checkUp(Shuadao, 20, 3);
             Anqi = checkUp(Anqi, 20, 3);
-			if(IQ > 50 && Wuxuechangshi < 50 )//by citydream 升级武学常识
+			
+			if (RuntimeEnvSetup.CurrentModId == "plus")
 			{
-				Wuxuechangshi += 1;
+				if(IQ > 50 && Wuxuechangshi < 50 )//by citydream 升级武学常识
+				{
+					Wuxuechangshi += 1;
+				}
 			}
             this.Limit(1, 1, 1);
 
             Debug.Log($"{this.Name}升到{this.Level}级！");
         }
-#endif
+
         /// <summary>
         /// 限制属性范围
         /// 
@@ -381,31 +306,24 @@ namespace Jyx2
                 wugong.Level = Tools.Limit(wugong.Level, 0, GameConst.MAX_SKILL_LEVEL);
             }
         }
-#if !INJECTFIX_PATCH_ENABLE
-        int checkUp(int value, int limit, int max_inc)
-        {
-            if (value >= limit)
-            {
-                value += Random.Range(0, max_inc);
-            }
 
-            return value;
-        }
-#else
-        [IFix.Patch]
         int checkUp(int value, int limit, int max_inc)
         {
             if (value >= limit)
             {
                 value += Random.Range(0, max_inc);
             }
-			else
+			
+			if (RuntimeEnvSetup.CurrentModId == "plus")
 			{
-				value += Random.Range(0, 2);//modified by citydream
+				if (value < limit)
+				{
+					value += Random.Range(0, 2);//modified by citydream
+				}
 			}
             return value;
         }
-#endif
+
 
         public int ExpGot; //战斗中获得的经验
         public int PreviousRoundHp; //上一回合的生命值

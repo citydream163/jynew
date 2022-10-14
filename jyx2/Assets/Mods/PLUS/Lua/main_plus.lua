@@ -27,7 +27,7 @@ function TryBattle(m)
 	Add3EventNum(70,998,1,0,0);--战斗计数器
 	return util.async_to_sync(luaBridge.TryBattle)(m);
 end
-
+ModId=CS.Jyx2.RuntimeEnvSetup.CurrentModId;
 --以下为lua全局函数
 
 --日历开始

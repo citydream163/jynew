@@ -74,7 +74,7 @@ public static class Jyx2ResourceHelper
         LuaManager.PreloadLua();
         
         //IFix热更新文件
-        await IFixManager.LoadPatch();
+       // await IFixManager.LoadPatch();
     }
 
     public static GameObject GetCachedPrefab(string path)
