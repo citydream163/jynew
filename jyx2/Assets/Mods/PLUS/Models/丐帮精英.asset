@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9c03694ddf4928b28528d7ab9dd03c, type: 3}
   m_Name: "\u4E10\u5E2E\u7CBE\u82F1"
   m_EditorClassIdentifier: 
-  m_View: {fileID: 7491274201247194271, guid: acd62e41fef78c743932392a4e00df8d, type: 3}
+  m_View: {fileID: 1681557836157538119, guid: 64a94e4cb75ae314aa4aafea61b3af17, type: 3}
   m_SwordWeapon:
     id: 0
   m_KnifeWeapon:

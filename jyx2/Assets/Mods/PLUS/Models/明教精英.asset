@@ -10,14 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a9c03694ddf4928b28528d7ab9dd03c, type: 3}
-  m_Name: "\u660E\u6559\u5F1F\u5B50"
+  m_Name: "\u660E\u6559\u7CBE\u82F1"
   m_EditorClassIdentifier: 
-  View:
-    m_AssetGUID: 8af1e715c46e57a478da787fdd9aed9c
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  m_View: {fileID: 2963148541032968938, guid: 8af1e715c46e57a478da787fdd9aed9c, type: 3}
+  m_View: {fileID: 6361060028730714571, guid: ec0cb7ca52bfd4343b3ea11929536064, type: 3}
   m_SwordWeapon:
     id: 0
   m_KnifeWeapon:
