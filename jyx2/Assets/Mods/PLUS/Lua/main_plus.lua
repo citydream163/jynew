@@ -1,3 +1,4 @@
+difficulty = CS.GameSettingManager.settings[CS.GameSettingManager.Catalog.Difficulty]--当前难度
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));--随机数种子
 tempTeamarr = {0,1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
 Exp = { 50, 150, 300, 500, 750, 1050, 1400, 1800, 2250, 2750, 3850, 5050, 6350, 7750, 9250, 10850, 12550, 14350, 16750, 18250, 21400, 24700, 28150, 31750, 35500, 39400, 43450, 47650, 52000, 60000, 68250, 76750, 85500, 94500, 105000, 117000, 130000, 145000, 163000, 183000, 205000,	230000,	258000,	288000,	320000,	355000,	393000,	433000,	478000,	528000 };
@@ -27,7 +28,11 @@ function TryBattle(m)
 	Add3EventNum(70,998,1,0,0);--战斗计数器
 	return util.async_to_sync(luaBridge.TryBattle)(m);
 end
-ModId=CS.Jyx2.RuntimeEnvSetup.CurrentModId;
+
+CurrentModId=CS.Jyx2.RuntimeEnvSetup.CurrentModId;--获取当前模组
+LuaFilePatten=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.LuaFilePatten;--获取lua前缀原始设定
+ModRootDir=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.ModRootDir;--获取模组运行目录
+--CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.LuaFilePatten="ka{0}";--修改lua前缀
 --以下为lua全局函数
 
 --日历开始
@@ -286,6 +291,7 @@ function PaperScroll(id,col)
 Scroll={};
 Scroll[39]={80,"紫霞秘籍"};
 Scroll[40]={560,"小无相功"};
+Scroll[41]={521,"十八泥偶"};
 Scroll[42]={200,"神照经"};
 Scroll[43]={1020,"易筋经"};
 Scroll[44]={700,"洗髓经"};
@@ -309,6 +315,7 @@ Scroll[61]={510,"黯然销魂掌"};
 Scroll[62]={530,"降龙十八掌"};
 Scroll[63]={180,"北冥神功"};
 Scroll[64]={170,"吸星大法"};
+Scroll[65]={178,"神木王鼎"};
 Scroll[66]={120,"六脉神剑谱"};
 Scroll[67]={50,"松风剑谱"};
 Scroll[68]={70,"泰山十八盘"};
@@ -339,6 +346,8 @@ Scroll[92]={275,"乾坤大挪移"};
 Scroll[93]={500,"葵花宝典"};
 Scroll[94]={570,"九阴真经"};
 Scroll[95]={350,"九阳真经"};
+Scroll[129]={666,"神仙美女图"};
+Scroll[183]={999,"带头大哥书信"};
 Scroll[185]={1200,"林震南遗言"};
 Scroll[193]={12,"金盆洗手请帖"};
 	if col==0 then
