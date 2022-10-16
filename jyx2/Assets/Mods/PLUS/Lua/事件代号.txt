@@ -564,7 +564,7 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 557救阿紫、打游坦之（地图开关）
 558阿紫
 559游坦之
-560未知
+560使用冰蚕
 561收阿紫
 562游坦之
 563坟墓
@@ -1079,8 +1079,10 @@ http://www.binglansky.com/bbs/topic.asp?page=1&forum_id=2&topic_id=798
 2200武道大会触发器初次
 2201武道大会触发器
 2202武道大会
-
+3000更换控制人物
 hotfix热更新补丁
+csdb角色数据
+main_plus专属函数及扩展函数
 
 Add3EventNum(1,999,1,0,0);--算卦次数计数器
 Add3EventNum(27, 0, 0, 0, 1);--五岳并派计数器

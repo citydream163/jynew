@@ -37,6 +37,81 @@ ModRootDir=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.ModRootDir;--获取模组运
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));--随机数种子
 tempTeamarr = {0,1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
 Exp = { 50, 150, 300, 500, 750, 1050, 1400, 1800, 2250, 2750, 3850, 5050, 6350, 7750, 9250, 10850, 12550, 14350, 16750, 18250, 21400, 24700, 28150, 31750, 35500, 39400, 43450, 47650, 52000, 60000, 68250, 76750, 85500, 94500, 105000, 117000, 130000, 145000, 163000, 183000, 205000,	230000,	258000,	288000,	320000,	355000,	393000,	433000,	478000,	528000 };
+function HPUP(roleid)
+	local lv0 = 0;
+	if (difficulty == nil or difficulty == 0) then
+		lv0 = 0;
+	elseif (difficulty == 1) then
+		lv0 = 1;
+	elseif (difficulty == 2) then
+		lv0 = 2;
+	end;
+	local lv1 = math.random(10, 15) + lv0;
+	local lv2 = lv1 + 5;
+		AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*lv1);
+
+end
+function SimUP(roleid,smp)
+	local lv0 = 0;
+	if (difficulty == nil or difficulty == 0) then
+		lv0 = 0;
+	elseif (difficulty == 1) then
+		lv0 = 1;
+	elseif (difficulty == 2) then
+		lv0 = 2;
+	end;
+	local lv1 = math.random(10, 15) + lv0;
+	local lv2 = lv1 + 5;
+	AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*lv2);
+	if smp == 8 then
+		AddMpWithoutHint(roleid, math.random (smp, 9)*4*lv2);
+	else
+		AddMpWithoutHint(roleid, math.random (smp, 8)*4*lv2);
+	end;
+end
+function AutoUP(roleid,lv,smp)
+	local lv0 = 0;
+	if (difficulty == nil or difficulty == 0) then
+		lv0 = 0;
+	elseif (difficulty == 1) then
+		lv0 = 1;
+	elseif (difficulty == 2) then
+		lv0 = 2;
+	end;
+	local lv1 = 1 + lv0;
+	local lv2 = math.random(1, 2) + lv0;
+	local lv3 = math.random(2, 5) + lv0;
+	local tlv = 0;
+	if lv == 1 then
+		tlv = lv1;
+	elseif lv == 2 then
+		tlv = lv2;
+	elseif lv == 3 then
+		tlv = lv3;
+	elseif lv == 4 then
+		tlv = lv2;
+	elseif lv == 5 then
+		tlv = lv3;
+	end;
+	if lv > 3 then
+		AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*tlv);
+		if smp == 8 then
+			AddMpWithoutHint(roleid, math.random (smp, 9)*4*tlv);
+		else
+			AddMpWithoutHint(roleid, math.random (smp, 8)*4*tlv);
+		end;
+	else
+		a = AddLevelreturnUper(roleid,tlv); 
+		if  a > 0 then
+			AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*a);
+			if smp == 8 then
+				AddMpWithoutHint(roleid, math.random (smp, 9)*4*a);
+			else
+				AddMpWithoutHint(roleid, math.random (smp, 8)*4*a);
+			end;
+		end;
+	end;
+end
 --日历开始
 function Calendar(num)
 	local xCountzj = jyx2_CheckEventCount(70,999,2);--季计数器取值
