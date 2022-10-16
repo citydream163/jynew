@@ -80,11 +80,17 @@ do return end;
 	AddExp(0,PaperScroll(40,0));
 do return end;
 ::label41::
-    Talk(0, "<color=orange>"..PaperScroll(41,1).."</color>留着也没用了，一把火烧了才干净！");
+if	JudgeItem(172,30) then
+    Talk(0, "<color=orange>"..PaperScroll(41,1).."</color>留着也没用了，把它烧了吧！");
 	AddItem(41,-1);
+	AddItemWithoutHint(172,-30);
 	AddItem(241,1);
 	AddExp(0,PaperScroll(41,0));
 	Talk(0, "啊！居然变成瓷器了。");
+else
+	Talk(0, "烧了怪可惜的。");
+end;
+
 do return end;
 ::label42::
     Talk(0, "<color=orange>"..PaperScroll(42,1).."</color>留着也没用了，一把火烧了才干净！");
@@ -225,11 +231,16 @@ do return end;
 	AddExp(0,PaperScroll(64,0));
 do return end;
 ::label65::
-    Talk(0, "<color=orange>"..PaperScroll(65,1).."</color>留着也没用了，一把火烧了才干净！");
+if	JudgeItem(172,50) then
+    Talk(0, "<color=orange>"..PaperScroll(65,1).."</color>留着也没用了，烧了吧！");
 	AddItem(65,-1);
+	AddItemWithoutHint(172,-50);
 	AddItem(265,1);
 	AddExp(0,PaperScroll(65,0));
-	Talk(0, "咦，变小了，可以拿在手中了！");
+	Talk(0, "咦，居然变小了，鼎脚合在一起可以当作戒指戴在手上了！");
+else
+	Talk(0, "烧了怪可惜的。");
+end;
 do return end;
 ::label66::
     Talk(0, "<color=orange>"..PaperScroll(66,1).."</color>留着也没用了，一把火烧了才干净！");

@@ -28,7 +28,9 @@ function TryBattle(m)
 	Add3EventNum(70,998,1,0,0);--战斗计数器
 	return util.async_to_sync(luaBridge.TryBattle)(m);
 end
-
+function JudgeItem(Itemid,num)--判断物品数量
+	return (CS.Jyx2.GameRuntimeData.Instance:GetItemCount(Itemid) >= num);
+end
 CurrentModId=CS.Jyx2.RuntimeEnvSetup.CurrentModId;--获取当前模组
 LuaFilePatten=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.LuaFilePatten;--获取lua前缀原始设定
 ModRootDir=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.ModRootDir;--获取模组运行目录
