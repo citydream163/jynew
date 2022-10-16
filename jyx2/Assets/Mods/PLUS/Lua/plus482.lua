@@ -1,0 +1,4 @@
+Talk(200, "<color=Red>高升客栈</color>，远近驰名。庆祝开幕一周年，特惠举办无量山自助旅游。请洽店小二。", "", 2);
+ModifyEvent(-2, 3, -2, -2, 483, -2, -2, -2, -2, -2, -2, -2, -2);
+SetFlag("ShowLocationName.高升客栈",1);--大地图显示当前地图名
+do return end;
