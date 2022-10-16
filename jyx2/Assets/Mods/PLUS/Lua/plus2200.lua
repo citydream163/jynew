@@ -18,8 +18,15 @@ jyx2_ReplaceSceneObject("25","NPC/battleNPC/灭绝","");
 ModifyEvent(-2, -2, 0, 0, 931, -1, -1, -1, -1, -1, -2, -2, -2);--清空本事件，恢复休息
 ModifyEvent(25, 24, 0, 0, -1, -1, 2202, -1, -1, -1, -2, -2, -2);--激活25场景24触发器的2202武道大会事件
 --升级开始
-math.randomseed(tostring(os.time()):reverse():sub(1, 7));
-local lv1 = math.random(10, 15);
+local lv0 = 0;
+if (difficulty == nil or difficulty == 0) then
+	lv0 = 0;
+elseif (difficulty == 1) then
+	lv0 = 1;
+elseif (difficulty == 2) then
+	lv0 = 2;
+end;
+local lv1 = math.random(10, 15) + lv0;
 local lv2 = lv1 + 5;
 --少林弟子升级
 AddHpWithoutHint(81, (6+math.random (0, 3))*3*lv1);
@@ -95,6 +102,48 @@ AddHpWithoutHint(139, (7+math.random (0, 3))*3*lv1);
 SetOneMagic(139, 0, 41, 900);
 AddHpWithoutHint(140, (7+math.random (0, 3))*3*lv1);
 SetOneMagic(140, 0, 41, 900);
+--峨嵋弟子升级
+AddHpWithoutHint(141, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(141, 0, 40, 500);
+AddHpWithoutHint(142, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(142, 0, 40, 500);
+AddHpWithoutHint(143, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(143, 0, 40, 600);
+AddHpWithoutHint(144, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(144, 0, 40, 600);
+AddHpWithoutHint(145, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(145, 0, 40, 700);
+AddHpWithoutHint(146, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(146, 0, 40, 700);
+AddHpWithoutHint(147, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(147, 0, 40, 850);
+AddHpWithoutHint(148, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(148, 0, 40, 800);
+AddHpWithoutHint(149, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(149, 0, 40, 800);
+AddHpWithoutHint(150, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(150, 0, 40, 900);
+--崆峒弟子升级
+AddHpWithoutHint(151, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(151, 0, 90, 600);
+AddHpWithoutHint(152, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(152, 0, 90, 600);
+AddHpWithoutHint(153, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(153, 0, 90, 700);
+AddHpWithoutHint(154, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(154, 0, 90, 700);
+AddHpWithoutHint(155, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(155, 0, 90, 800);
+AddHpWithoutHint(156, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(156, 0, 90, 800);
+AddHpWithoutHint(157, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(157, 0, 90, 800);
+AddHpWithoutHint(158, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(158, 0, 90, 900);
+AddHpWithoutHint(159, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(159, 0, 90, 900);
+AddHpWithoutHint(160, (7+math.random (0, 3))*3*lv1);
+SetOneMagic(160, 0, 90, 600);
 --华山弟子升级
 AddHpWithoutHint(161, (5+math.random (0, 3))*3*lv1);
 SetOneMagic(161, 0, 37, 700);
@@ -137,6 +186,27 @@ AddHpWithoutHint(179, (5+math.random (0, 3))*3*lv1);
 SetOneMagic(179, 0, 36, 700);
 AddHpWithoutHint(180, (5+math.random (0, 3))*3*lv1);
 SetOneMagic(180, 0, 36, 700);
+--恒山弟子升级
+AddHpWithoutHint(181, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(181, 0, 34, 600);
+AddHpWithoutHint(182, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(182, 0, 34, 600);
+AddHpWithoutHint(183, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(183, 0, 34, 600);
+AddHpWithoutHint(184, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(184, 0, 34, 700);
+AddHpWithoutHint(185, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(185, 0, 34, 700);
+AddHpWithoutHint(186, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(186, 0, 34, 700);
+AddHpWithoutHint(187, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(187, 0, 34, 700);
+AddHpWithoutHint(188, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(188, 0, 34, 800);
+AddHpWithoutHint(189, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(189, 0, 34, 800);
+AddHpWithoutHint(190, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(190, 0, 34, 800);
 --嵩山弟子升级
 AddHpWithoutHint(191, (7+math.random (0, 3))*3*lv1);
 SetOneMagic(191, 0, 38, 500);
@@ -158,6 +228,27 @@ AddHpWithoutHint(199, (8+math.random (0, 3))*3*lv1);
 SetOneMagic(199, 0, 38, 800);
 AddHpWithoutHint(200, (8+math.random (0, 3))*3*lv1);
 SetOneMagic(200, 0, 38, 900);
+--泰山弟子升级
+AddHpWithoutHint(201, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(201, 0, 35, 500);
+AddHpWithoutHint(202, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(202, 0, 35, 500);
+AddHpWithoutHint(203, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(203, 0, 35, 500);
+AddHpWithoutHint(204, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(204, 0, 35, 600);
+AddHpWithoutHint(205, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(205, 0, 35, 600);
+AddHpWithoutHint(206, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(206, 0, 35, 600);
+AddHpWithoutHint(207, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(207, 0, 35, 700);
+AddHpWithoutHint(208, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(208, 0, 35, 700);
+AddHpWithoutHint(209, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(209, 0, 35, 800);
+AddHpWithoutHint(210, (6+math.random (0, 3))*3*lv1);
+SetOneMagic(210, 0, 35, 800);
 --五毒教徒升级
 AddHpWithoutHint(221, (4+math.random (0, 3))*3*lv1);
 SetOneMagic(221, 0, 77, 600);
@@ -179,6 +270,38 @@ AddHpWithoutHint(229, (4+math.random (0, 3))*3*lv1);
 SetOneMagic(229, 0, 77, 900);
 AddHpWithoutHint(230, (4+math.random (0, 3))*3*lv1);
 SetOneMagic(230, 0, 77, 900);
+--日月教徒升级
+AddHpWithoutHint(231, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(232, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(233, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(234, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(235, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(236, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(237, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(238, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(239, (8+math.random (0, 3))*3*lv1);
+AddHpWithoutHint(240, (8+math.random (0, 3))*3*lv1);
+--雪山弟子升级
+AddHpWithoutHint(241, (2+math.random (0, 3))*3*lv1);
+SetOneMagic(241, 0, 33, 500);
+AddHpWithoutHint(242, (3+math.random (0, 3))*3*lv1);
+SetOneMagic(242, 0, 33, 500);
+AddHpWithoutHint(243, (3+math.random (0, 3))*3*lv1);
+SetOneMagic(243, 0, 33, 600);
+AddHpWithoutHint(244, (3+math.random (0, 3))*3*lv1);
+SetOneMagic(244, 0, 33, 600);
+AddHpWithoutHint(245, (4+math.random (0, 3))*3*lv1);
+SetOneMagic(245, 0, 33, 700);
+AddHpWithoutHint(246, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(246, 0, 33, 700);
+AddHpWithoutHint(247, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(247, 0, 33, 800);
+AddHpWithoutHint(248, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(248, 0, 33, 800);
+AddHpWithoutHint(249, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(249, 0, 33, 900);
+AddHpWithoutHint(250, (5+math.random (0, 3))*3*lv1);
+SetOneMagic(250, 0, 33, 900);
 --番僧升级
 AddHpWithoutHint(251, (7+math.random (0, 3))*3*lv1);
 SetOneMagic(251, 0, 70, 400);
@@ -291,6 +414,12 @@ AddMpWithoutHint(3, math.random (4, 8)*4*lv2);
 --张三丰升级
 AddHpWithoutHint(5, (5+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(5, math.random (4, 8)*4*lv2);
+--何太冲升级
+AddHpWithoutHint(7, (7+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(7, math.random (4, 8)*4*lv2);
+--唐文亮升级
+AddHpWithoutHint(8, (6+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(8, math.random (4, 8)*4*lv2);
 --范遥升级
 AddHpWithoutHint(10, (7+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(10, math.random (4, 8)*4*lv2);
@@ -315,12 +444,33 @@ AddMpWithoutHint(19, math.random (3, 8)*4*lv2);
 --莫大升级
 AddHpWithoutHint(20, (7+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(20, math.random (5, 8)*4*lv2);
+--定闲升级
+AddHpWithoutHint(21, (4+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(21, math.random (4, 8)*4*lv2);
 --左冷禅升级
 AddHpWithoutHint(22, (8+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(22, math.random (3, 8)*4*lv2);
+--天门升级
+AddHpWithoutHint(23, (6+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(23, math.random (3, 8)*4*lv2);
+--东方不败升级
+AddHpWithoutHint(27, (9+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(27, math.random (8, 9)*4*lv2);
 --风清扬升级
 AddHpWithoutHint(30, (9+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(30, math.random (4, 8)*4*lv2);
+--丹青生升级
+AddHpWithoutHint(31, (7+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(31, math.random (4, 8)*4*lv2);
+--秃笔翁升级
+AddHpWithoutHint(32, (6+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(32, math.random (4, 8)*4*lv2);
+--黑白子升级
+AddHpWithoutHint(33, (8+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(33, math.random (4, 8)*4*lv2);
+--黄钟公升级
+AddHpWithoutHint(34, (6+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(34, math.random (4, 8)*4*lv2);
 --龙岛主升级
 AddHpWithoutHint(39, (9+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(39, math.random (4, 8)*4*lv2);
@@ -337,6 +487,9 @@ SetOneMagic(41, 0, 6, 800);
 AddHpWithoutHint(42, (7+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(42, math.random (4, 8)*4*lv2);
 SetOneMagic(42, 0, 6, 700);
+--白万剑升级
+AddHpWithoutHint(43, (6+math.random (0, 3))*3*lv2);
+AddMpWithoutHint(43, math.random (4, 8)*4*lv2);
 --乔峰升级
 AddHpWithoutHint(50, (5+math.random (0, 3))*3*lv2);
 AddMpWithoutHint(50, math.random (3, 8)*4*lv2);
