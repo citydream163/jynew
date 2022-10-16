@@ -80,7 +80,7 @@ do return end;
 	AddExp(0,PaperScroll(40,0));
 do return end;
 ::label41::
-if	JudgeItem(172,30) then
+if	(JudgeItem(172,30) and Sbno == 1) then
     Talk(0, "<color=orange>"..PaperScroll(41,1).."</color>留着也没用了，把它烧了吧！");
 	AddItem(41,-1);
 	AddItemWithoutHint(172,-30);
@@ -90,7 +90,6 @@ if	JudgeItem(172,30) then
 else
 	Talk(0, "烧了怪可惜的。");
 end;
-
 do return end;
 ::label42::
     Talk(0, "<color=orange>"..PaperScroll(42,1).."</color>留着也没用了，一把火烧了才干净！");
@@ -231,7 +230,7 @@ do return end;
 	AddExp(0,PaperScroll(64,0));
 do return end;
 ::label65::
-if	JudgeItem(172,50) then
+if	(JudgeItem(172,50) and Smwd == 1) then
     Talk(0, "<color=orange>"..PaperScroll(65,1).."</color>留着也没用了，烧了吧！");
 	AddItem(65,-1);
 	AddItemWithoutHint(172,-50);

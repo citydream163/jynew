@@ -1,13 +1,15 @@
-if UseItem(174) == true then goto label0
-elseif UseItem(95) == true then goto label11
-elseif UseItem(202) == true then goto label12
-elseif UseItem(204) == true then goto label13
-elseif UseItem(182) == true then goto label14
+if UseItem(41) == true then goto label41
+elseif UseItem(95) == true then goto label95
+elseif UseItem(174) == true then goto label174
+elseif UseItem(182) == true then goto label182
+elseif UseItem(202) == true then goto label202
+elseif UseItem(204) == true then goto label204
+
 else
 	Talk(401, "让我再研究研究。");
 end;
 do return end;
-::label0::
+::label174::
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));
 if HaveItem(143) == true then goto label2 end;
 if jyx2_CheckEventCount(1,999,0) > 3 then goto label15 end;
@@ -138,18 +140,18 @@ AddItem(202, 1);
 IcanFly = 1;
 Talk(0,tTalk4);
 do return end;
-::label11::
+::label95::
 Talk(401, "他强由他强，清风拂山岗；他横由他横，明月照大江。他自狠来他自恶，我自一口真气足。");
 Talk(0,"先生真有点学问。");
 do return end;
-::label12::
+::label202::
 Talk(401, "你在这游戏里已度过<color=red>"..Calendar(2).."</color>天，胡混了<color=yellow>"..Calendar(3).."</color>天，共战斗<color=blue>"..Calendar(4).."</color>场，休息了<color=green>"..Calendar(5).."</color>天。");
 Talk(0,"是吗？你是怎么知道的？");
 do return end;
-::label13::
+::label204::
 Talk(401, "这是客栈导游券，可在客栈外树林中使用，由你自行指定目的地。");
 do return end;
-::label14::
+::label182::
 Talk(401, "这是罗盘，可显示当前坐标和小船位置以及小地图。可以去南贤居控制小地图开关。");
 do return end;
 ::label15::
@@ -177,4 +179,12 @@ tMoney = math.random(1,5) * tsNum;
 AddItemWithoutHint(174, -tMoney);
 AddItem(202, sNum * 5);
 IcanFly = 1;
+do return end;
+::label41::
+Talk(401, "这是十八泥偶，修炼以后可以调和内力。如果没用了，也可以拿去炼化。");
+Sbno = 1;
+do return end;
+::label65::
+Talk(401, "这是星宿海掌门练化功大法之物，修炼以后可以加功夫带毒。如果不用了，也可以拿去炼化。");
+Smwd = 1;
 do return end;
