@@ -1,4 +1,7 @@
 difficulty = CS.GameSettingManager.settings[CS.GameSettingManager.Catalog.Difficulty]--当前难度
+if (difficulty == nil) then
+	difficulty == 1;
+end;
 function Rest()
 	luaBridge.Rest();
 	Add3EventNum(70,997,1,0,0);--休息计数器
@@ -36,10 +39,13 @@ ModRootDir=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.ModRootDir;--获取模组运
 --以下为lua全局函数
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));--随机数种子
 tempTeamarr = {0,1,2,9,16,17,25,28,29,35,36,37,38,44,45,47,48,49,51,53,54,58,59,61,63,76};
-Exp = { 50, 150, 300, 500, 750, 1050, 1400, 1800, 2250, 2750, 3850, 5050, 6350, 7750, 9250, 10850, 12550, 14350, 16750, 18250, 21400, 24700, 28150, 31750, 35500, 39400, 43450, 47650, 52000, 60000, 68250, 76750, 85500, 94500, 105000, 117000, 130000, 145000, 163000, 183000, 205000,	230000,	258000,	288000,	320000,	355000,	393000,	433000,	478000,	528000 };
-function HPUP(roleid)
+Exp = { 50, 150, 300, 500, 750, 1050, 1400, 1800, 2250, 2750, 3850, 5050, 6350, 7750, 9250, 10850, 12550, 14350, 16750, 18250, 21400, 24700, 28150, 31750, 35500, 39400, 43450, 47650, 52000, 60000, 68250, 76750, 85500, 94500, 105000, 117000, 130000, 145000, 163000, 183000, 205000,	230000,	258000,	288000,	320000,	355000,	393000,	433000,	478000,	528000 };--升级所需经验
+
+Innid = {1,3,40,60,61};--客栈编号
+
+function HPUP(roleid)--简单加血函数
 	local lv0 = 0;
-	if (difficulty == nil or difficulty == 0) then
+	if (difficulty == 0) then
 		lv0 = 0;
 	elseif (difficulty == 1) then
 		lv0 = 1;
@@ -51,7 +57,7 @@ function HPUP(roleid)
 		AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*lv1);
 
 end
-function SimUP(roleid,smp)
+function SimUP(roleid,smp)--简单升级函数
 	local lv0 = 0;
 	if (difficulty == nil or difficulty == 0) then
 		lv0 = 0;
@@ -69,7 +75,7 @@ function SimUP(roleid,smp)
 		AddMpWithoutHint(roleid, math.random (smp, 8)*4*lv2);
 	end;
 end
-function AutoUP(roleid,lv,smp)
+function AutoUP(roleid,lv,smp)--自动简易升级函数
 	local lv0 = 0;
 	if (difficulty == nil or difficulty == 0) then
 		lv0 = 0;

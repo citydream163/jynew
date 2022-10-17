@@ -3,13 +3,13 @@ elseif UseItem(204) == true then goto label5
 end;
 do return end;
 :: label0 ::
-if jyx2_CheckEventCount(1,999,0) == 1 then
+if (jyx2_CheckEventCount(1,999,0) == 1) then
 	tTalk0 = "真有半仙说的那么玄吗？快试试看。";
 	oTalk0 = "哎呀，怎么一下子跑到这里来了，这是哪里呀，去打听一下。";
-elseif jyx2_CheckEventCount(1,999,0) == 2 then
+elseif (jyx2_CheckEventCount(1,999,0) == 2) then
 	tTalk0 = "<color=blue>神游券</color>真神奇，快点继续跑啊。";
 	oTalk0 = "哈哈哈哈，遨游寰宇，神游天下，爽啊。还得找那半仙多拿几张<color=blue>神游券</color>去。";
-elseif jyx2_CheckEventCount(1,999,0) == 3 then
+elseif (jyx2_CheckEventCount(1,999,0) == 3) then
 	tTalk0 = "跑的有点慢啊，飞起来。";
 	oTalk0 = "风在脑后，鸟在身旁。让我飞起来吧。";
 Add3EventNum(1,999,1,0,0);--次数计数器加1
@@ -31,7 +31,7 @@ arrf[4] = 60;
 arrf[5] = 61;
 :: label4 ::
 fTaget = arrf[math.random(1,#arrf)];
-if fTaget == GetCurrentEventID() then goto label4 end;
+if (fTaget == GetCurrentEventID()) then goto label4 end;
 --jyx2_WalkFromTo(-1, fTaget);--走
 jyx2_MovePlayer(""..fTaget.."","Level/NavigateObjs");--飞
 jyx2_Wait(1);
@@ -83,8 +83,8 @@ arr[36] = {1,61,69};
 :: label3 ::
 tarr = math.random(1,#arr);
 if ((jyx2_CheckEventCount(1,999,0) == nil) or (jyx2_CheckEventCount(1,999,0) == 0)) then Add3EventNum(1,999,1,0,0); end;
-	if arr[tarr][1] > jyx2_CheckEventCount(1,999,0) then goto label3 end;
-	if arr[tarr][2] == GetCurrentEventID() then goto label3 end;
+	if (arr[tarr][1] > jyx2_CheckEventCount(1,999,0)) then goto label3 end;
+	if (arr[tarr][2] == GetCurrentEventID()) then goto label3 end;
 target = "".. arr[tarr][3] .. "";
 jyx2_MovePlayer(""..target.."","Level/NavigateObjs");
 jyx2_Wait(1);

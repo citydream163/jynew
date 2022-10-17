@@ -1,3 +1,6 @@
+if (difficulty == 2) then
+	ModifyEvent(-2, 31, -2, -2, -2, -2, 2103, -2, -2, -2, -2, -2, -2);
+end;
 if UseItem(41) == true then goto label41
 elseif UseItem(95) == true then goto label95
 elseif UseItem(174) == true then goto label174
@@ -13,17 +16,17 @@ do return end;
 ::label174::
 math.randomseed(tostring(os.time()):reverse():sub(1, 7));
 if HaveItem(143) == true then goto label2 end;
-if jyx2_CheckEventCount(1,999,0) > 3 then goto label15 end;
+if (jyx2_CheckEventCount(1,999,0) > 3) then goto label15 end;
     if JudgeMoney(5) == true then goto label1 end;
         Talk(401, "小哥你这么点钱，就想打发我半仙啊。");
         do return end;
 ::label1::
 AddItemWithoutHint(174, -math.random(1,5));
-if jyx2_CheckEventCount(1,999,0) == 0 then 
+if (jyx2_CheckEventCount(1,999,0) == 0) then 
 	goto label21
-elseif jyx2_CheckEventCount(1,999,0) == 1 then 
+elseif (jyx2_CheckEventCount(1,999,0) == 1) then 
 	goto label22
-elseif jyx2_CheckEventCount(1,999,0) == 2 then 
+elseif (jyx2_CheckEventCount(1,999,0) == 2) then 
 	goto label23
 else
 	Talk(0,"能不能不看面相只要<color=blue>神游券</color>啊。");
@@ -85,10 +88,22 @@ Talk(0,"多谢半仙吉言，我这就去闯荡江湖了。");
 goto label9
 do return end;
 ::label2::
-if jyx2_CheckEventCount(1,999,0) == 0 then yMoney = -1000;xNum = 3;yNum = 7;
-elseif jyx2_CheckEventCount(1,999,0) == 1 then yMoney = -1500;xNum = 5;yNum = 10;
-elseif jyx2_CheckEventCount(1,999,0) == 2 then yMoney = -2000;xNum = 7;yNum = 12;
-else yMoney = -3000;xNum = 10;yNum = 15;
+if (jyx2_CheckEventCount(1,999,0) == 0) then
+	yMoney = -1000;
+	xNum = 3;
+	yNum = 7;
+elseif (jyx2_CheckEventCount(1,999,0) == 1) then
+	yMoney = -1500;
+	xNum = 5;
+	yNum = 10;
+elseif (jyx2_CheckEventCount(1,999,0) == 2) then
+	yMoney = -2000;
+	xNum = 7;
+	yNum = 12;
+else
+	yMoney = -3000;
+	xNum = 10;
+	yNum = 15;
 end;
 AddItem(174, yMoney);
 Talk(401, "半仙我多谢武林盟主赏赐！");
@@ -102,17 +117,17 @@ IcanFly = 2;
 Talk(0,"他跑得太快了，<color=blue>神游券</color>掉了一地。");
 do return end;
 ::label9::
-if jyx2_CheckEventCount(1,999,0) == 0 then 
+if (jyx2_CheckEventCount(1,999,0) == 0) then 
 	tTalk1 = "正所谓生死有命富贵在天，只要小哥大展拳脚，定能有一番大作为。半仙我游遍山南海北，小哥喜欢旅游吧？我送你一张<color=blue>神游券</color>。使用方法：在大地图中客栈附近树林中打开本券，可以神游到任意地方。";
 	tTalk2 = "这话听着还算顺耳，什么<color=blue>神游券</color>，有那么厉害吗？我去试试看。";
 	tTalk3 = "正所谓生死有命富贵在天，只要小哥大展拳脚，定能有一番大作为。我再送你一张<color=blue>神游券</color>。";
 	tTalk4 = "这话听着还算顺耳，人生一世草木一秋，过自己想要的生活才最重要。";
-elseif jyx2_CheckEventCount(1,999,0) == 1 then
+elseif (jyx2_CheckEventCount(1,999,0) == 1) then
 	tTalk1 = "正所谓生死有命富贵在天，只要小哥大展拳脚，定能……";
 	tTalk2 = "哎呀呀，这些话我都听腻了，<color=blue>神游券</color>，快把<color=blue>神游券</color>拿来。";
 	tTalk3 = "正所谓生死有命富贵在天，只要小哥大展拳脚……";
 	tTalk4 = "哎呀呀，别啰嗦，快把<color=blue>神游券</color>拿来。";
-elseif jyx2_CheckEventCount(1,999,0) == 2 then
+elseif (jyx2_CheckEventCount(1,999,0) == 2) then
 	tTalk1 = "正所谓生死有命富贵在天，只要……";
 	tTalk2 = "身随心走，闯荡天下。";
 	tTalk3 = "正所谓生死有命富贵在天……";
@@ -127,33 +142,22 @@ if HaveItem(202) == true then goto label10 end;
 Talk(401,tTalk1);
 AddItem(202, 1);
 IcanFly = 1;
-if jyx2_CheckEventCount(1,999,0) < 3 then Add3EventNum(1,999,1,0,0); end;--次数计数器加1
+if (jyx2_CheckEventCount(1,999,0) < 3) then Add3EventNum(1,999,1,0,0); end;--次数计数器加1
 Talk(0,tTalk2);
-ModifyEvent(1000, 1, -2, -2, 2130, 2085, -2, -2, -2, -2, -2, -2, -2);--河洛客栈树林触发器
-ModifyEvent(1000, 3, -2, -2, 2086, 2085, -2, -2, -2, -2, -2, -2, -2);--有间客栈树林触发器
-ModifyEvent(1000, 40, -2, -2, 2086, 2085, -2, -2, -2, -2, -2, -2, -2);--悦来客栈树林触发器
-ModifyEvent(1000, 60, -2, -2, 2086, 2085, -2, -2, -2, -2, -2, -2, -2);--龙门客栈树林触发器
-ModifyEvent(1000, 61, -2, -2, 2086, 2085, -2, -2, -2, -2, -2, -2, -2);--高升客栈树林触发器
+Innid = {1,3,40,60,61};--客栈编号
+for i, v in pairs(Innid) do
+	if (v == GetCurrentGameMapid()) then
+		ModifyEvent(1000, v, -2, -2, 2130, 2085, -2, -2, -2, -2, -2, -2, -2);--当前客栈树林触发器
+	else
+		ModifyEvent(1000, v, -2, -2, 2086, 2085, -2, -2, -2, -2, -2, -2, -2);--其他客栈树林触发器
+	end;
+end;
 do return end;
 ::label10::
 Talk(401,tTalk3);
 AddItem(202, 1);
 IcanFly = 1;
 Talk(0,tTalk4);
-do return end;
-::label95::
-Talk(401, "他强由他强，清风拂山岗；他横由他横，明月照大江。他自狠来他自恶，我自一口真气足。");
-Talk(0,"先生真有点学问。");
-do return end;
-::label202::
-Talk(401, "你在这游戏里已度过<color=red>"..Calendar(2).."</color>天，胡混了<color=yellow>"..Calendar(3).."</color>天，共战斗<color=blue>"..Calendar(4).."</color>场，休息了<color=green>"..Calendar(5).."</color>天。");
-Talk(0,"是吗？你是怎么知道的？");
-do return end;
-::label204::
-Talk(401, "这是客栈导游券，可在客栈外树林中使用，由你自行指定目的地。");
-do return end;
-::label182::
-Talk(401, "这是罗盘，可显示当前坐标和小船位置以及小地图。可以去南贤居控制小地图开关。");
 do return end;
 ::label15::
 sTaget = ShowSelectPanel(401,"命数早已注定，多算无益，小哥要再来些<color=blue>神游券</color>吗？", {"是(Y)","否(N)"});
@@ -167,13 +171,13 @@ if not(sNum == 0) then
 end;
 do return end;
 ::label17::
-if sNum == 1 then
+if (sNum == 1) then
 	tsNum = 5;
-elseif sNum == 2 then
+elseif (sNum == 2) then
 	tsNum = 9;
-elseif sNum == 3 then
+elseif (sNum == 3) then
 	tsNum = 12;
-elseif sNum == 4 then
+elseif (sNum == 4) then
 	tsNum = 14;
 end;
 tMoney = math.random(1,5) * tsNum;
@@ -198,4 +202,18 @@ do return end;
 Talk(401, "这是千年冰蚕，毒性极高，可使练毒者功力大增。不想自用也可以送人啊。");
 AddItemWithoutHint(237, -1);
 AddItemWithoutHint(37, 1);
+do return end;
+::label95::
+Talk(401, "他强由他强，清风拂山岗；他横由他横，明月照大江。他自狠来他自恶，我自一口真气足。");
+Talk(0,"先生真有点学问。");
+do return end;
+::label182::
+Talk(401, "这是罗盘，可显示当前坐标和小船位置以及小地图。可以去南贤居控制小地图开关。");
+do return end;
+::label202::
+Talk(401, "你在这游戏里已度过<color=red>"..Calendar(2).."</color>天，胡混了<color=yellow>"..Calendar(3).."</color>天，共战斗<color=blue>"..Calendar(4).."</color>场，休息了<color=green>"..Calendar(5).."</color>天。");
+Talk(0,"是吗？你是怎么知道的？");
+do return end;
+::label204::
+Talk(401, "这是客栈导游券，可在客栈外树林中使用，由你自行指定目的地。");
 do return end;
