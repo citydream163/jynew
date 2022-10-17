@@ -17,7 +17,6 @@ using System;
 using System.Reflection;
 using System.Text;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 
 namespace CSObjectWrapEditor
@@ -941,6 +940,8 @@ namespace CSObjectWrapEditor
                     .Where(method => !ignoreCompilerGenerated || !isDefined(method, typeof(CompilerGeneratedAttribute)))
                     .Where(method => !ignoreNotPublic || method.IsPublic)
                     .Where(method => !ignoreProperty || !method.IsSpecialName || (!method.Name.StartsWith("get_") && !method.Name.StartsWith("set_")))
+                    .Where(method => !method.GetParameters().Any(pInfo => pInfo.ParameterType.IsPointer))
+                    .Where(method => !method.ReturnType.IsPointer)
                     .Cast<MethodBase>()
                     .Concat(kv.Key.GetConstructors(bindingAttrOfConstructor).Cast<MethodBase>())
                     .Where(method => !injectByGeneric(method, kv.Value))
@@ -1459,16 +1460,7 @@ namespace CSObjectWrapEditor
         {
             LuaCallCSharp = new List<Type>();
 
-            CSharpCallLua = new List<Type>()
-            {
-                typeof(Action<int>),
-                typeof(Action<string>),
-                typeof(Action<float>),
-                typeof(Action<bool>),
-                typeof(Action<long>),
-                typeof(Action<uint>),
-                typeof(Action<ulong>),
-            };
+            CSharpCallLua = new List<Type>();
 
             GCOptimizeList = new List<Type>();
 
@@ -1478,9 +1470,6 @@ namespace CSObjectWrapEditor
 
             BlackList = new List<List<string>>()
             {
-                new List<string>(){"UnityEngine.Light", "shadowRadius"},
-                new List<string>(){"UnityEngine.Light", "SetLightDirty"},
-                new List<string>(){"UnityEngine.Light", "shadowAngle"},
             };
 
             HotfixCfg = new Dictionary<Type, HotfixFlag>();
@@ -1488,7 +1477,6 @@ namespace CSObjectWrapEditor
             OptimizeCfg = new Dictionary<Type, OptimizeFlag>();
 
             DoNotGen = new Dictionary<Type, HashSet<string>>();
-
 
 #if UNITY_EDITOR && HOTFIX_ENABLE
             assemblyList = HotfixConfig.GetHotfixAssembly().Select(a => a.GetName().Name).ToList();
@@ -1651,16 +1639,14 @@ namespace CSObjectWrapEditor
 #if !XLUA_GENERAL
         static void callCustomGen()
         {
-
             foreach (var method in (from type in XLua.Utils.GetAllTypes()
-                from method in type.GetMethods(BindingFlags.Static | BindingFlags.Public)
-                where method.IsDefined(typeof(GenCodeMenuAttribute), false)
-                select method))
+                               from method in type.GetMethods(BindingFlags.Static | BindingFlags.Public)
+                               where method.IsDefined(typeof(GenCodeMenuAttribute), false) select method))
             {
                 method.Invoke(null, new object[] { });
             }
         }
-  
+
         [MenuItem("XLua/Generate Code", false, 1)]
         public static void GenAll()
         {
@@ -1832,7 +1818,7 @@ namespace CSObjectWrapEditor
         }
 #if !XLUA_GENERAL
         [UnityEditor.Callbacks.PostProcessBuild(1)]
-        public static void CheckGenrate(BuildTarget target, string pathToBuiltProject)
+        public static void CheckGenerate(BuildTarget target, string pathToBuiltProject)
         {
             if (EditorApplication.isCompiling || Application.isPlaying)
             {
@@ -1840,11 +1826,7 @@ namespace CSObjectWrapEditor
             }
             if (!DelegateBridge.Gen_Flag)
             {
-                #if UNITY_EDITOR_WIN || UNITY_EDITOR_WIN64
-                    Debug.Log("没有生成lua wrap，但不影响在windows下运行");
-                #else
-                    throw new InvalidOperationException("Code has not been genrated, may be not work in phone!");
-                #endif
+                throw new InvalidOperationException("Code has not been generated, may be not work in phone!");
             }
         }
 #endif
