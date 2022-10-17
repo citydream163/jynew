@@ -4,7 +4,8 @@ elseif UseItem(174) == true then goto label174
 elseif UseItem(182) == true then goto label182
 elseif UseItem(202) == true then goto label202
 elseif UseItem(204) == true then goto label204
-
+elseif UseItem(37) == true then goto label37
+elseif UseItem(237) == true then goto label237
 else
 	Talk(401, "让我再研究研究。");
 end;
@@ -187,4 +188,14 @@ do return end;
 ::label65::
 Talk(401, "这是星宿海掌门练化功大法之物，修炼以后可以加功夫带毒。如果不用了，也可以拿去炼化。");
 Smwd = 1;
+do return end;
+::label37::
+Talk(401, "这是千年冰蚕，毒性极高，可使练毒者功力大增。其实也可以自用啊。");
+AddItemWithoutHint(37, -1);
+AddItemWithoutHint(237, 1);
+do return end;
+::label237::
+Talk(401, "这是千年冰蚕，毒性极高，可使练毒者功力大增。不想自用也可以送人啊。");
+AddItemWithoutHint(237, -1);
+AddItemWithoutHint(37, 1);
 do return end;
