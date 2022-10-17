@@ -20,9 +20,9 @@ MonoBehaviour:
   LuaFilePatten: plus{0}
   PlayerName: 
   PreloadedLua:
+  - csdb
   - main_plus
   - hotfix
-  - csdb
   StoryIdNameFixes:
   - Id: 76
     Name: "\u6B66\u5F53\u5F1F\u5B50"

@@ -1,6 +1,6 @@
 jyx2_ReplaceSceneObject("","NPC/算命先生","");
 ModifyEvent(-2, 30, -2, -2, -1, -1, -1, -2, -2, -2, -2, -2, -2);
-Innid = {1,3,40,60,61};
+--Innid = {1,3,40,60,61};
 tInn = {};
 j = 1;
 for i, v in pairs(Innid) do

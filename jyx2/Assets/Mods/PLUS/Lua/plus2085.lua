@@ -1,5 +1,5 @@
 if UseItem(202) == true then goto label0 
-elseif UseItem(204) == true then goto label5
+elseif UseItem(204) == true then goto label1
 end;
 do return end;
 :: label0 ::

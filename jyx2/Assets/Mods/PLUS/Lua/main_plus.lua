@@ -1,6 +1,6 @@
-difficulty = CS.GameSettingManager.settings[CS.GameSettingManager.Catalog.Difficulty]--当前难度
+difficulty = CS.GameSettingManager.settings[CS.GameSettingManager.Catalog.Difficulty];--当前难度
 if (difficulty == nil) then
-	difficulty == 1;
+	difficulty = 1;
 end;
 function Rest()
 	luaBridge.Rest();
@@ -20,7 +20,7 @@ end
 function MiniMapOff()
 	jyx2_ReplaceSceneObject("1000", "MiniMap/Display","");
 end
-RunTo = luaBridge.RunTo--跑路
+RunTo = luaBridge.RunTo;--跑路
 function GetCurrentEventID()
 	return tonumber(luaBridge.GetCurrentEventID());
 end
@@ -30,6 +30,12 @@ function TryBattle(m)
 end
 function JudgeItem(Itemid,num)--判断物品数量
 	return (CS.Jyx2.GameRuntimeData.Instance:GetItemCount(Itemid) >= num);
+end
+function Fight(m)--测试战斗
+	AddHp(0,999);
+	AddMp(0,999);
+	SetOneMagic(0,0,1,900);
+	TryBattle(m);
 end
 CurrentModId=CS.Jyx2.RuntimeEnvSetup.CurrentModId;--获取当前模组
 LuaFilePatten=CS.Jyx2.RuntimeEnvSetup.CurrentModConfig.LuaFilePatten;--获取lua前缀原始设定

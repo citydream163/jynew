@@ -15,7 +15,7 @@ do return end;
 Talk(401, "这位小哥，要不要看看面相呀？");
 Talk(0, "我听说算命的都是骗子。");
 Talk(401, "我刘半仙说话算话，如果我算的不准不要钱。");
-Innid = {1,3,40,60,61};--客栈编号
+--Innid = {1,3,40,60,61};--客栈编号
 	if (difficulty == 0) then
 		for i, v in pairs(Innid) do
 			ModifyEvent(v, 30, -2, -2, 2074, 2075, -1, -2, -2, -2, -2, -2, -2);

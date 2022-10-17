@@ -144,7 +144,7 @@ AddItem(202, 1);
 IcanFly = 1;
 if (jyx2_CheckEventCount(1,999,0) < 3) then Add3EventNum(1,999,1,0,0); end;--次数计数器加1
 Talk(0,tTalk2);
-Innid = {1,3,40,60,61};--客栈编号
+--Innid = {1,3,40,60,61};--客栈编号
 for i, v in pairs(Innid) do
 	if (v == GetCurrentGameMapid()) then
 		ModifyEvent(1000, v, -2, -2, 2130, 2085, -2, -2, -2, -2, -2, -2, -2);--当前客栈树林触发器
