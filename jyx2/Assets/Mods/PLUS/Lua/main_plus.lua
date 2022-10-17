@@ -124,6 +124,42 @@ function AutoUP(roleid,lv,smp)--自动简易升级函数
 		end;
 	end;
 end
+function EndingUP(roleid,lv,smp)--最终战自动升级函数
+	local tlv = 0;
+	if (difficulty == nil or difficulty == 0) then
+		lv = 0;
+	elseif (difficulty == 1) then
+		if (GetRoleLevel(roleid) < 30) then
+			tlv = 30 - GetRoleLevel(roleid) + math.random(5, 10);
+		else
+			lv = 0;
+		end;
+	elseif (difficulty == 2) then
+		if (GetRoleLevel(roleid) < 50) then
+			tlv = 50 - GetRoleLevel(roleid) + math.random(5, 10);
+		else
+			lv = 0;
+		end;
+	end;
+	if lv == 3 then
+		a = AddLevelreturnUper(roleid,tlv); 
+		if  a > 0 then
+			AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*a);
+			if smp == 8 then
+				AddMpWithoutHint(roleid, math.random (smp, 9)*4*a);
+			else
+				AddMpWithoutHint(roleid, math.random (smp, 8)*4*a);
+			end;
+		end;
+	elseif lv == 5 then
+		AddHpWithoutHint(roleid, (CSDb[roleid][2]+math.random (0, 3))*3*tlv);
+		if smp == 8 then
+			AddMpWithoutHint(roleid, math.random (smp, 9)*4*tlv);
+		else
+			AddMpWithoutHint(roleid, math.random (smp, 8)*4*tlv);
+		end;
+	end;
+end
 --日历开始
 function Calendar(num)
 	local xCountzj = jyx2_CheckEventCount(70,999,2);--季计数器取值

@@ -54,6 +54,21 @@ if JudgeEthics(0, 0, 50) == true then goto label0 end;
         Talk(0, "总算料理完毕了。咦！好像又有声音。", "", 1);
 			DarkScence();
 			jyx2_ReplaceSceneObject("", "NPC/昔日恶友", "1");
+			EndingUP(36,5,4);--林平之升级
+			EndingUP(61,3,4);--欧阳克升级
+			EndingUP(17,3,4);--王难姑升级
+			EndingUP(47,3,4);--阿紫升级
+			EndingUP(48,5,4);--游坦之升级
+			EndingUP(16,3,4);--胡青牛升级
+			EndingUP(25,3,4);--蓝凤凰升级
+			EndingUP(44,3,4);--岳老三升级
+			EndingUP(37,3,4);--狄云升级
+			EndingUP(38,5,4);--石破天升级
+			EndingUP(45,3,4);--薛慕华升级
+			EndingUP(53,5,4);--段誉升级
+			EndingUP(58,5,4);--杨过升级
+			EndingUP(59,5,4);--小龙女升级
+			jyx2_Wait(1);
 			SetRoleFace(1);
 			LightScence();
 			Talk(58, "兄弟慢走。", "", 0);
@@ -129,6 +144,21 @@ if JudgeEthics(0, 0, 50) == true then goto label0 end;
             Talk(0, "总算料理完毕了。咦！好像又有声音。", "", 1);
 			DarkScence();
 			jyx2_ReplaceSceneObject("", "NPC/昔日好友", "1");
+			EndingUP(37,3,4);--狄云升级
+			EndingUP(38,5,4);--石破天升级
+			EndingUP(45,3,4);--薛慕华升级
+			EndingUP(53,5,4);--段誉升级
+			EndingUP(58,5,4);--杨过升级
+			EndingUP(59,5,4);--小龙女升级
+			EndingUP(1,3,4);--胡斐升级
+			EndingUP(2,3,4);--程灵素升级
+			EndingUP(9,3,4);--张无忌升级
+			EndingUP(76,5,4);--王语嫣升级
+			EndingUP(35,5,4);--令狐冲升级
+			EndingUP(63,3,4);--程英升级
+			EndingUP(54,3,4);--袁承志升级
+			EndingUP(49,5,4);--虚竹升级
+			jyx2_Wait(1);
 			SetRoleFace(1);
 			LightScence();
 			Talk(58, "兄弟慢走。", "", 0);
