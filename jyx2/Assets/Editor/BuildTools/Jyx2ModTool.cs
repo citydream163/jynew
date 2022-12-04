@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Editor;
 using Jyx2.MOD.ModV2;
 using UnityEditor;
 using UnityEngine;
@@ -231,7 +232,9 @@ namespace Jyx2Editor.BuildTool
         private void GenerateModXmlFile(MODRootConfig config)
         {
             var modId = config.ModId.ToLower().Trim();
-            var xmlContent = Tools.SerializeXML(config.CreateModInfo());
+            var modInfo = JynewBuilder.CreateModInfo(config, m_BuildTargetPlatForm);
+            
+            var xmlContent = Tools.SerializeXML(modInfo);
             var xmlPath = Path.Combine(GetModExportDirectory(modId), modId + ".xml");
             File.WriteAllText(xmlPath, xmlContent);
         }
