@@ -1,3 +1,4 @@
+jyx2_ReplaceSceneObject("", "Dynamic/Leave2", "");--by citydream 屏蔽地道入口（强制推进剧情）
 jyx2_SwitchRoleAnimation("NPC/tubiweng", "Assets/BuildSource/AnimationControllers/自然站立Controller.controller");
 jyx2_SwitchRoleAnimation("NPC/huangzhonggong", "Assets/BuildSource/AnimationControllers/自然站立Controller.controller");
 Talkplus(1221);--0, "四位那么好的闲情逸致聚在这儿，是不是准备打麻将，插花收不收啊？"
@@ -23,6 +24,7 @@ Talkplus(1235);--0, "你们是日月神教的？"
 Talkplus(1236);--33, "不错，我们是奉教主之命，在此看守任老怪的，你居然利用我们的弱点救他出去。"
 Talkplus(1237);--34, "别说了，得赶紧回黑木崖向东方教主报告这件事。走！"
 DarkScence();
+jyx2_ReplaceSceneObject("", "Dynamic/Leave2", "1");--by citydream 显示地道入口
 jyx2_ReplaceSceneObject("", "NPC/danqingsheng", "");--丹青生
 jyx2_ReplaceSceneObject("", "NPC/tubiweng", "");--秃笔翁
 jyx2_ReplaceSceneObject("", "NPC/heibaizi", "");--黑白子
