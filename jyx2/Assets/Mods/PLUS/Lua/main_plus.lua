@@ -321,7 +321,7 @@ function Fight(m)--战斗测试
 	AddWuchang(0,99);
 	AddSpeed(0,99);
 	AddAttack(0,99);
-	if m >= 0 and m <= #ConfigBattle then TryBattle(m) end;
+	if m ~= nil and m >= 0 and m <= #ConfigBattle then TryBattle(m) end;
 end
 function AddLevelWithoutLimit(roleId,v0)--谨慎使用，超过最大等级后打开用户面板会报错
 	CS.Jyx2.GameRuntimeData.Instance:GetRole(roleId).Level = CS.Jyx2.GameRuntimeData.Instance:GetRole(roleId).Level + v0;
