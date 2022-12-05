@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EventTargets:
-  - {fileID: 0}
+  - {fileID: 838428592}
   m_InteractiveEventId: -1
   m_UseItemEventId: -1
   m_EnterEventId: -1
@@ -16191,7 +16191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixType: 0
   Flag: "\u4EFB\u6211\u884C\u9003\u51FA\u5730\u7262"
-  MoveTo: {fileID: 0}
+  MoveTo: {fileID: 872210664}
 --- !u!114 &838428594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16206,7 +16206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixType: 0
   Flag: "\u6885\u5E84\u6C42\u52A9\u9EC4\u949F\u516C"
-  MoveTo: {fileID: 0}
+  MoveTo: {fileID: 1095384179}
 --- !u!114 &838428595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16221,7 +16221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixType: 0
   Flag: "\u6885\u5E84\u6C42\u52A9\u9ED1\u767D\u5B50"
-  MoveTo: {fileID: 0}
+  MoveTo: {fileID: 1158888892}
 --- !u!114 &838428596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16236,7 +16236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixType: 0
   Flag: "\u6885\u5E84\u6C42\u52A9\u79C3\u7B14\u7FC1"
-  MoveTo: {fileID: 0}
+  MoveTo: {fileID: 40349929}
 --- !u!208 &838428597
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -20837,7 +20837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EventTargets:
-  - {fileID: 0}
+  - {fileID: 838428592}
   m_InteractiveEventId: -1
   m_UseItemEventId: -1
   m_EnterEventId: -1
@@ -22080,7 +22080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EventTargets:
-  - {fileID: 0}
+  - {fileID: 838428592}
   m_InteractiveEventId: -1
   m_UseItemEventId: -1
   m_EnterEventId: -1
