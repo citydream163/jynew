@@ -4,9 +4,9 @@ do return end;
 AddItemWithoutHint(127, -1);
 Talkplus(1096);--35, "好一只翡翠杯！得此美酒佳器，人生更有何憾。我令狐冲先干为敬，谢谢兄弟赠酒之情。"
 PlayAnimation(3, 5722, 5748);
-jyx2_PlayTimeline("[Timeline]ka238_悦来客栈_令狐冲喝酒", 0, false, "NPC/令狐冲");
+jyx2_PlayTimeline("[Timeline]ka238_Yuelai_LinghuchongDrink", 0, false, "NPC/令狐冲");
 jyx2_Wait(0.9);
-jyx2_StopTimeline("[Timeline]ka238_悦来客栈_令狐冲喝酒");
+jyx2_StopTimeline("[Timeline]ka238_Yuelai_LinghuchongDrink");
 ModifyEvent(-2, -2, -2, -2, 243, -1, -1, 5722, 5748, 5722, -2, -2, -2);
 Talkplus(1097);--0, "＜令狐冲！他就是令狐冲！＞我听江湖上议论纷纷说令狐兄已遭华山派逐出师门，不知可有此事？"
 Talkplus(1098);--35, "唉！令狐冲一生仗义直行，从不做违背良心之事，到头来却落至这个结果。这件事的始末也非三言两语可道尽。唉，不谈这个，咱们喝酒吧。"

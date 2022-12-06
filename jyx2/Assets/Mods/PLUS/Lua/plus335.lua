@@ -12,7 +12,7 @@ Talkplus(1554);--38, "真的？那我要喝。"
 DarkScence();
 ModifyEvent(-2, -2, -2, -2, -2, -2, -2, 5152, 5152, 5152, -2, -2, -2);
 jyx2_FixMapObject("石破天痊愈",1);
-jyx2_SwitchRoleAnimation("NPC/石破天", "Assets/BuildSource/AnimationControllers/备份/石破天Controller.controller");
+jyx2_SwitchRoleAnimation("NPC/石破天", "Assets/BuildSource/AnimationControllers/备份/ShipotianController.controller");
 ModifyEvent(-2, 1, -2, -2, -2, -2, 338, -2, -2, -2, -2, -2, -2);
 LightScence();
 Talkplus(1555);--38, "哇！这酒怎么这么辛辣！不过好像真的挺有效的，谢谢你！既然老伯伯不在了，我要去找妈妈跟小黄了。"

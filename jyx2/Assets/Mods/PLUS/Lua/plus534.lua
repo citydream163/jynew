@@ -23,7 +23,7 @@ Talkplus(2633);--0, "贤弟就进去吧。搞不好老前辈要发奖品给你�
 DarkScence();
 jyx2_ReplaceSceneObject("", "NPC/xiaoyaozi", "1");
 jyx2_FixMapObject("逍遥子传功",1);
-jyx2_SwitchRoleAnimation("NPC/xuzhu", "Assets/BuildSource/AnimationControllers/受功.controller");
+jyx2_SwitchRoleAnimation("NPC/xuzhu", "Assets/BuildSource/AnimationControllers/LearnMagic.controller");
 ModifyEvent(-2, 1, 1, 1, -1, -1, -1, 6486, 6486, 6486, -2, -2, -2);
 ModifyEvent(-2, 2, 1, 1, -1, -1, -1, 6450, 6450, 6450, -2, -2, -2);
 Leave(49);
@@ -49,7 +49,7 @@ ModifyEvent(-2, 2, 1, 1, 536, -1, -1, 6522, 6522, 6522, -2, -2, -2);
 ModifyEvent(-2, 3, 1, 1, -1, -1, -1, 6342, 6342, 6342, -2, -2, -2);
 jyx2_SwitchRoleAnimation("NPC/xiaoyaozi", "Assets/BuildSource/AnimationControllers/Dead-FaceUp.controller");
 jyx2_FixMapObject("逍遥子传功完毕",1);
-jyx2_SwitchRoleAnimation("NPC/suxinghe", "Assets/BuildSource/AnimationControllers/自然站立Controller.controller");
+jyx2_SwitchRoleAnimation("NPC/suxinghe", "Assets/BuildSource/AnimationControllers/StandController.controller");
 LightScence();
 Talkplus(2634);--0, "奇怪，怎么进去这么久……我也进去看看好了。"
 do return end;

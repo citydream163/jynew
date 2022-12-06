@@ -8,12 +8,12 @@ Talkplus(2228);--0, "段兄，你该不会在跟这玉像说话吧。＜这人�
 Talkplus(2229);--53, "藐姑射之山，有神人居焉，肌肤若冰雪，绰约若处子，不食五谷，吸风饮露。神仙姊姊，你若能活过来跟我说一句话，我便为你死一千遍，一万遍，也如身登极乐，欢喜无限。磕首千遍，原本就是天经地义之事……"
 DarkScence();
 ModifyEvent(-2, 0, -2, -2, -2, -2, -2, 6316, 6316, 6316, -2, -2, -2);
-jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/跪拜Controller.controller");
+jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/KneelController.controller");
 jyx2_MovePlayer("观看段誉磕头","Level/Dynamic");
 LightScence();
 PlayAnimation(0, 6316, 6334);
 PlayAnimation(0, 6316, 6334);
-jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/备份/段誉跪拜Controller.controller");
+jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/备份/DuanyuKneelController.controller");
 Talkplus(2230);--0, "兄弟，你干么？你真的要磕一千下呀！"
 Talkplus(2231);--53, "十，十一，十二……"
 PlayAnimation(0, 6316, 6334);
@@ -24,7 +24,7 @@ DarkScence();
 ModifyEvent(-2, 0, -2, -2, -2, -2, -2, 6338, 6338, 6338, -2, -2, -2);
 jyx2_ReplaceSceneObject("", "Dynamic/Chair_11", "");--需要替换破烂的蒲团
 ModifyEvent(-2, 11, -2, -2, -2, -2, -2, 6312, 6312, 6312, -2, -2, -2);
-jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/备份/段誉Controller.controller");
+jyx2_SwitchRoleAnimation("NPC/段誉11", "Assets/BuildSource/AnimationControllers/备份/DuanyuController.controller");
 LightScence();
 Talkplus(2233);--0, "兄弟，你还真磕了一千下，你的头还好吧。你看，蒲团都被你磕破了。"
 Talkplus(2234);--53, "咦！这蒲团中似乎藏有一个绸包，这上面还有写字……“汝既磕首千遍，自当供我驱策，终身无悔。此卷为我逍遥派武功精要，每日卯午酉三时，务须用心修习一次……”"
