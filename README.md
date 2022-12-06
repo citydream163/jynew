@@ -2,11 +2,11 @@
 
 ![主宣传图](https://user-images.githubusercontent.com/7448857/192084760-017f3789-81ff-4a67-81bf-8d8c4df1cac5.png)
 
-<p><a href="https://store.steampowered.com/app/2098790/"><img src="https://user-images.githubusercontent.com/7448857/205875106-ba52fc19-f92a-47ff-b0d6-c5e451b8bdd2.png" align="center" height="96"></a><a href="https://www.taptap.cn/app/246004"><img src="https://user-images.githubusercontent.com/7448857/205873000-824a0855-bb62-4cbd-a187-c2f51f343c7d.png" align="center" height="96"></a></p>
+<p><a href="https://store.steampowered.com/app/2098790/" title="电脑版"><img src="https://user-images.githubusercontent.com/7448857/205875106-ba52fc19-f92a-47ff-b0d6-c5e451b8bdd2.png" align="center" height="96"></a><a href="https://www.taptap.cn/app/246004" title="移动终端版"><img src="https://user-images.githubusercontent.com/7448857/205873000-824a0855-bb62-4cbd-a187-c2f51f343c7d.png" align="center" height="96"></a></p>
 
 
 [![license](https://img.shields.io/badge/license-%E9%87%91%E7%BE%A43D%E9%87%8D%E5%88%B6%E7%89%88%E7%A4%BE%E5%8C%BA%E5%8D%8F%E8%AE%AE-blue)](https://github.com/jynew/jynew/blob/main/LICENSE)
-[![release](https://img.shields.io/badge/release-20221017-brightgreen)](https://github.com/citydream163/jynew/releases/tag/20221017)
+[![release](https://img.shields.io/badge/release-20221206-brightgreen)](https://github.com/citydream163/jynew/releases/tag/20221017)
 [![Unity Version](https://img.shields.io/badge/unity-2020.3.32.f1c1-blue)](https://unity.cn/releases/lts/2020) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/jynew/jynew/pulls) 
 ![commit](https://img.shields.io/github/last-commit/jynew/jynew)<br>
