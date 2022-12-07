@@ -1245,6 +1245,7 @@ function CleanMap()
 	end;
 	if jyx2_CheckEventCount(6,995,2) == 0 and jyx2_CheckEventCount(6,995,0) > 0 and Calendar(2)-jyx2_CheckEventCount(6,995,0) > 0 then--灭绝击杀（收尸）
 		jyx2_ReplaceSceneObject("33","NPC/miejueshitai","");
+		ModifyEvent(33, 2, -2, -2, -1, -1, -1, -2, -2, -2, -2, -2, -2);
 		Add3EventNum(6,995,0,0,1);--已处理
 	end;
 	if jyx2_CheckEventCount(18,995,2) == 0 and jyx2_CheckEventCount(18,995,0) > 0 and Calendar(2)-jyx2_CheckEventCount(18,995,0) > 360 then--成昆击杀（无痕）
@@ -1264,6 +1265,7 @@ function CleanMap()
 		Add3EventNum(29,995,0,0,1);--已处理
 	end;
 	if jyx2_CheckEventCount(46,995,2) == 0 and jyx2_CheckEventCount(46,995,0) > 0 and Calendar(2)-jyx2_CheckEventCount(46,995,0) > 0 then--丁春秋击杀（收尸）
+	ModifyEvent(35, 1, -2, -2, -1, -1, -1, -2, -2, -2, -2, -2, -2);
 		jyx2_ReplaceSceneObject("35","NPC/dingchunqiu","");
 		Add3EventNum(46,995,0,0,1);--已处理
 	end;
