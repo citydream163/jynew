@@ -13,7 +13,7 @@ Talkplus(1751);--0, "杨兄怎么了？"
 Talkplus(1752);--58, "…………"
 DarkScence();
 ModifyEvent(-2, -2, -2, -2, 397, -1, -1, 6186, 6186, 6186, -2, -2, -2);--by fanyu|杨过贴图替换。场景07-编号06
-jyx2_SwitchRoleAnimation("NPC/杨过", "Assets/BuildSource/AnimationControllers/备份/YangguoController.controller");--尽量不要增加新trigger
+jyx2_SwitchRoleAnimation("NPC/杨过", "Assets/BuildSource/AnimationControllers/备份/杨过Controller.controller");--尽量不要增加新trigger
 LightScence();
 Talkplus(1753);--58, "我杨某这条命是少侠你救回来的。"
 Talkplus(1754);--0, "你身上的毒质当真都解了？还好还好，我刚真捏了把冷汗。"
