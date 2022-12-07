@@ -94,8 +94,8 @@ public class GraphicSetting : MonoBehaviour
         HasAntiAliasing = 0;
         Vsync = 0;
         MaxFps = MaxFpsEnum.Fps120;
-        QualityLevel = QualityLevelEnum.High;
-        ShaderLodLevel = ShaderLodLevelEnum.High;
+        QualityLevel = QualityLevelEnum.Mid;
+        ShaderLodLevel = ShaderLodLevelEnum.Mid;
         ShadowQuality = ShadowQuality.HardOnly;
         ShadowShowLevel = ShadowShowLevelEnum.Team;
 #else

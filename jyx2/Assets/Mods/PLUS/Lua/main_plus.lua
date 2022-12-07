@@ -339,7 +339,7 @@ function Exit()--脱离迷宫
 	jyx2_MovePlayer("0","Level/NavigateObjs");
 end
 function Tips(m)--提示
-	CS.StoryEngine.Instance:DisplayPopInfo(m);
+	CS.StoryEngine.DisplayPopInfo(m);
 end
 function Flyto(a)--飞到指定位置
 	jyx2_MovePlayer(a,"Level/NavigateObjs");
