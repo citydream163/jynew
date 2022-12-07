@@ -93,10 +93,10 @@ public class GraphicSetting : MonoBehaviour
         HasWaterNormal = 1;
         HasAntiAliasing = 0;
         Vsync = 0;
-        MaxFps = MaxFpsEnum.Fps120;
+        MaxFps = MaxFpsEnum.Fps60;
         QualityLevel = QualityLevelEnum.Mid;
         ShaderLodLevel = ShaderLodLevelEnum.Mid;
-        ShadowQuality = ShadowQuality.HardOnly;
+        ShadowQuality = ShadowQuality.Disable;
         ShadowShowLevel = ShadowShowLevelEnum.Team;
 #else
         HasFog = 1;
@@ -111,7 +111,7 @@ public class GraphicSetting : MonoBehaviour
         ShadowShowLevel = ShadowShowLevelEnum.All;
 #endif
     }
-
+    
     public void Save()
     {
         var type = this.GetType();
