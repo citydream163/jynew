@@ -82,6 +82,6 @@
 
 ## 社区
 
-* 玩家Q群 480072818（已满）、704697875（已满）、[389536186](https://qm.qq.com/cgi-bin/qm/qr?k=qMtbfhrgiaiGpfC5gfEVaonJ84t7pPP6&jump_from=webapi&authKey=M0DVFsFy1p9STYz9OL959moJ7wxFDixd9Q1bemytWcu91aW+qyS+ofOJkPuHcys4 "点击链接加入群聊【群侠传，启动】玩家群")
+* 玩家Q群 480072818（已满）、704370277（已满）、704697875（已满）、[389536186](https://qm.qq.com/cgi-bin/qm/qr?k=qMtbfhrgiaiGpfC5gfEVaonJ84t7pPP6&jump_from=webapi&authKey=M0DVFsFy1p9STYz9OL959moJ7wxFDixd9Q1bemytWcu91aW+qyS+ofOJkPuHcys4 "点击链接加入群聊【群侠传，启动】玩家群")
 
 
