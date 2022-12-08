@@ -43,7 +43,7 @@
 
 ![1](https://github.com/citydream163/jynew/blob/PLUS/images/1.png "高昌迷宫")
 ![2](https://github.com/citydream163/jynew/blob/PLUS/images/2.png "桃花岛")
-![3](https://github.com/citydream163/jynew/blob/PLUS/images/9.png "1:1还原地图")
+![3](https://github.com/citydream163/jynew/blob/PLUS/images/3.png "胡斐居练功")
 ![4](https://github.com/citydream163/jynew/blob/PLUS/images/4.png "新增道具一览")
 ![5](https://github.com/citydream163/jynew/blob/PLUS/images/5.png "初识王语嫣")
 ![6](https://github.com/citydream163/jynew/blob/PLUS/images/6.png "算命先生")
