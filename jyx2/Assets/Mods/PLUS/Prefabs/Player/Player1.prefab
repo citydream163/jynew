@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4c7218c4d328544ba9f8c445f3fd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Animancer: {fileID: 2832797429851659649}
   m_Animator: {fileID: 3868944278030584594}
   IsOnBoat: 0
 --- !u!114 &6582788071065449869
@@ -131,6 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226bd2b86e20b264b923a1d3cae2900c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsRunning: 0
+  m_Animancer: {fileID: 0}
+  _Idle: {fileID: 7400000, guid: 19947d83295c3b24c8c4ece6145908ae, type: 3}
+  _Move: {fileID: 7400000, guid: 2fc5a63e73b786b4cbba4d2aa3ecb9f7, type: 2}
 --- !u!114 &5826370387881379382
 MonoBehaviour:
   m_ObjectHideFlags: 0
