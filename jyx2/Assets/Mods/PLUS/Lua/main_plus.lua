@@ -189,6 +189,8 @@ function TryBattle(m)
 				if (CSDb[ConfigBattle[m][7][k]][27] == 1 or CSDb[ConfigBattle[m][7][k]][27] == 4) and Maxenemieslevel1 < enemieslevel1[k] then
 					Maxenemieslevel1 = enemieslevel1[k];
 					EnemyMaxLevelRole = ConfigBattle[m][7][k];
+				else
+					EnemyMaxLevelRole = ConfigBattle[m][7][k];
 				end
 			end
 			for i, v in pairs(ConfigBattle[m][7]) do
@@ -212,6 +214,8 @@ function TryBattle(m)
 				if (CSDb[ConfigBattle[m][7][k]][27] ~= 3 or CSDb[ConfigBattle[m][7][k]][27] ~= 7) and Maxenemieslevel2 < enemieslevel1[k] then
 					Maxenemieslevel2 = enemieslevel1[k];
 					EnemyMaxLevelRole2 = ConfigBattle[m][7][k];
+				else
+					Maxenemieslevel2 = GetRoleLevel(ConfigBattle[m][7][k]);
 				end
 			end
 			if Maxenemieslevel2 < GetTeamMaxLevel() then
