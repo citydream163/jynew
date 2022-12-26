@@ -10,7 +10,7 @@
 
 
 [![license](https://img.shields.io/badge/license-%E9%87%91%E7%BE%A43D%E9%87%8D%E5%88%B6%E7%89%88%E7%A4%BE%E5%8C%BA%E5%8D%8F%E8%AE%AE-blue)](https://github.com/jynew/jynew/blob/main/LICENSE)
-[![release](https://img.shields.io/badge/release-20221208-brightgreen)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865676700)
+[![release](https://img.shields.io/badge/release-20221225-brightgreen)](https://steamcommunity.com/sharedfiles/filedetails/?id=2865676700)
 [![Unity Version](https://img.shields.io/badge/unity-2020.3.32.f1c1-blue)](https://unity.cn/releases/lts/2020) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/jynew/jynew/pulls) 
 ![commit](https://img.shields.io/github/last-commit/jynew/jynew)<br>
