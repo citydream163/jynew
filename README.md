@@ -2,7 +2,11 @@
 
 ![主宣传图](https://user-images.githubusercontent.com/7448857/192084760-017f3789-81ff-4a67-81bf-8d8c4df1cac5.png)
 
-<p><a href="https://store.steampowered.com/app/2098790/" title="电脑版"><img src="https://user-images.githubusercontent.com/7448857/205875106-ba52fc19-f92a-47ff-b0d6-c5e451b8bdd2.png" align="center" height="96"></a><a href="https://www.taptap.cn/app/246004" title="移动终端版"><img src="https://user-images.githubusercontent.com/7448857/205873000-824a0855-bb62-4cbd-a187-c2f51f343c7d.png" align="center" height="96"></a></p>
+<p>
+<a href="https://store.steampowered.com/app/2098790/" title="电脑版"><img src="https://user-images.githubusercontent.com/7448857/205875106-ba52fc19-f92a-47ff-b0d6-c5e451b8bdd2.png" align="center" height="70"></a>
+<a href="https://www.taptap.cn/app/246004" title="移动终端版"><img src="https://user-images.githubusercontent.com/7448857/205873000-824a0855-bb62-4cbd-a187-c2f51f343c7d.png" align="center" height="70"></a>
+<a href="https://apps.apple.com/cn/app/%E7%BE%A4%E4%BE%A0%E4%BC%A0%E5%90%AF%E5%8A%A8/id1659977116" title="iOS版"><img src="https://user-images.githubusercontent.com/7448857/209269801-48ab9e9e-2318-40ed-8d8a-d34a49514ed5.png" align="center" height="70"></a>
+</p>
 
 
 [![license](https://img.shields.io/badge/license-%E9%87%91%E7%BE%A43D%E9%87%8D%E5%88%B6%E7%89%88%E7%A4%BE%E5%8C%BA%E5%8D%8F%E8%AE%AE-blue)](https://github.com/jynew/jynew/blob/main/LICENSE)
@@ -82,6 +86,6 @@
 
 ## 社区
 
-* 玩家Q群 480072818（已满）、704370277（已满）、704697875（已满）、[389536186](https://qm.qq.com/cgi-bin/qm/qr?k=qMtbfhrgiaiGpfC5gfEVaonJ84t7pPP6&jump_from=webapi&authKey=M0DVFsFy1p9STYz9OL959moJ7wxFDixd9Q1bemytWcu91aW+qyS+ofOJkPuHcys4 "点击链接加入群聊【群侠传，启动】玩家群")
+* 玩家Q群 480072818、704370277、704697875、389536186、346751656)
 
 
